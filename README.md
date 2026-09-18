@@ -1,2 +1,2 @@
-# hocin-shop
-StoreMaster V8.1 - Hocin-shop
+# dawn-dz
+StoreMaster V8.1 - Dfm
