@@ -2221,6 +2221,25 @@
 @media(max-width:1100px){.ca-kpi-grid{grid-template-columns:repeat(2,1fr)}.ca-grid-3{grid-template-columns:1fr 1fr}.ca-status-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:800px){.ca-grid-2,.ca-grid-3{grid-template-columns:1fr}.ca-funnel-row{grid-template-columns:110px 1fr 62px}.ca-kpi-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.ca-kpi-grid{grid-template-columns:1fr}.ca-status-grid{grid-template-columns:repeat(2,1fr)}.ca-toolbar-left,.ca-toolbar-right{width:100%}.ca-toolbar-left label,.ca-toolbar-right{flex:1}.ca-toolbar input{width:100%}}
+
+/* Checkout Analytics — واجهة احترافية دون عرض كلمة "المرحلة" */
+#checkout-analytics .ca-pro{gap:14px}
+#checkout-analytics .ca-toolbar{background:linear-gradient(135deg,#ffffff,#f6f9fc)!important;border:1px solid #e1e8f0!important;border-radius:16px!important;box-shadow:0 6px 22px rgba(15,23,42,.06)!important}
+#checkout-analytics .ca-kpi{background:linear-gradient(145deg,#ffffff,#f8fafc)!important;border:1px solid #e4eaf1!important;border-radius:16px!important;box-shadow:0 5px 18px rgba(15,23,42,.055)!important;min-height:112px}
+#checkout-analytics .ca-kpi:before{content:'';position:absolute;right:0;top:0;width:4px;height:100%;background:linear-gradient(180deg,#4361ee,#06d6a0);border-radius:0 16px 16px 0;opacity:.85}
+#checkout-analytics .ca-kpi strong{letter-spacing:-.3px}
+#checkout-analytics .ca-panel{background:linear-gradient(145deg,#ffffff,#fbfcfe)!important;border:1px solid #e1e8f0!important;border-radius:16px!important;box-shadow:0 5px 18px rgba(15,23,42,.055)!important}
+#checkout-analytics .ca-panel-title{padding-bottom:9px;border-bottom:1px solid #edf1f5;margin-bottom:12px!important}
+#checkout-analytics .ca-funnel{gap:9px}
+#checkout-analytics .ca-funnel-row{padding:5px 0}
+#checkout-analytics .ca-funnel-bar{height:22px;background:#edf2f7!important;border-radius:999px}
+#checkout-analytics .ca-funnel-bar i{background:linear-gradient(90deg,#4361ee,#06b6d4)!important;border-radius:999px;box-shadow:0 2px 8px rgba(67,97,238,.22)}
+#checkout-analytics .ca-funnel-value{font-size:10px!important}
+#checkout-analytics .ca-status{background:#f8fafc!important;border-color:#e5eaf0!important}
+#checkout-analytics .ca-mini-table th{font-weight:800!important}
+#checkout-analytics .ca-mini-table td{font-weight:600}
+#checkout-analytics .ca-live{padding:7px 10px;border-radius:999px;background:#ecfdf3;border:1px solid #bbf7d0}
+@media(max-width:520px){#checkout-analytics .ca-pro{gap:10px}#checkout-analytics .ca-toolbar{padding:11px;border-radius:13px!important}#checkout-analytics .ca-kpi{min-height:94px;padding:13px;border-radius:14px!important}#checkout-analytics .ca-kpi strong{font-size:24px;margin-top:6px}#checkout-analytics .ca-kpi small{font-size:9px}#checkout-analytics .ca-panel{padding:12px;border-radius:14px!important}#checkout-analytics .ca-panel-title b{font-size:12px!important}#checkout-analytics .ca-panel-title span{font-size:9px!important}}
 </style>
 <style id="storemaster-orders-style">
 .archive-menu-item{position:relative}.archive-filter-grid{grid-template-columns:2fr 1fr 1fr 1fr 1fr auto}.archive-info{color:#cfd6e6;font-size:12px;margin-top:6px} .orders-header{display:flex;justify-content:space-between;align-items:center;gap:15px}.orders-stats-grid{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:12px;margin:18px 0}.order-stat-card{position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:16px;min-height:105px}.order-stat-card span{display:block;color:var(--gray);font-size:12px}.order-stat-card strong{display:block;font-size:28px;margin-top:10px}.order-stat-card i{position:absolute;left:14px;bottom:12px;opacity:.18;font-size:32px}.order-stat-card.danger strong{color:#ff7b72}.orders-filter-card,.orders-table-card{background:var(--card,#151a24);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px;margin-bottom:18px}.orders-filter-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr auto;gap:10px}.orders-filter-grid input,.orders-filter-grid select{width:100%;box-sizing:border-box;padding:11px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.20);background:#111722;color:#ffffff!important;font-size:13px;font-weight:700;line-height:1.4;outline:none}.orders-filter-grid select option{background:#111722;color:#ffffff;font-weight:700}.orders-filter-grid input::placeholder{color:#cbd5e1!important;opacity:1}.orders-filter-grid input:focus,.orders-filter-grid select:focus{border-color:#ffd54a;box-shadow:0 0 0 2px rgba(255,213,74,.12)}.table-responsive{overflow:auto}.orders-table{width:100%;border-collapse:separate;border-spacing:0;min-width:980px}.orders-table th{font-size:12px;color:var(--gray);padding:13px 10px;text-align:right;border-bottom:1px solid rgba(255,255,255,.1);white-space:nowrap}.orders-table td{padding:13px 10px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle;color:#f3f4f6}.orders-table tbody tr{cursor:pointer;transition:.18s}.orders-table tbody tr:hover{background:rgba(255,255,255,.035)}.order-id{font-weight:800;white-space:nowrap;color:#ffffff}.order-customer{font-weight:700;color:#ffffff}.order-products{max-width:250px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#f3f4f6}.orders-table td b{color:#ffffff}.orders-table td a{color:#7dd3fc}.order-status{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;font-size:11px;font-weight:800;white-space:nowrap}.order-status.pending{background:rgba(255,193,7,.12);color:#ffd45b}.order-status.confirmed{background:rgba(0,153,255,.12);color:#6ec8ff}.order-status.delivery{background:rgba(164,107,255,.14);color:#c6a2ff}.order-status.delivered{background:rgba(39,174,96,.14);color:#6ee39b}.order-status.cancelled{background:rgba(231,76,60,.14);color:#ff8c82}.orders-empty{text-align:center!important;padding:45px!important;color:var(--gray)}.orders-loading{text-align:center;padding:18px;color:var(--gray)}.orders-menu-item{position:relative}.orders-menu-badge{position:absolute;top:7px;left:7px;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:#ffd54a;color:#111;font-size:10px;font-weight:900;line-height:18px;text-align:center;box-shadow:0 0 10px rgba(255,213,74,.45)}.order-action-btn{border:0;border-radius:9px;padding:7px 9px;cursor:pointer;background:rgba(255,255,255,.07);color:inherit}.order-action-btn:hover{background:rgba(255,255,255,.13)}.order-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.order-detail-box{border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px;background:rgba(255,255,255,.035);color:#ffffff}.order-detail-box b{display:block;color:#cfd6e6;font-size:11px;margin-bottom:5px}.order-detail-box a{color:#70b7ff!important}.order-detail-footer,.order-detail-footer b,.order-items-list,.order-item-row,.order-item-row b{color:#ffffff}.order-items-list .order-item-row div{color:#ffffff}.order-items-list .order-item-row div[style*="color:var(--gray)"]{color:#cfd6e6!important}.order-status-select{color:#ffffff!important}.order-items-list{display:grid;gap:8px;margin-top:12px}.order-item-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px;border-radius:10px;background:rgba(255,255,255,.035)}.order-item-row img{width:46px;height:46px;border-radius:8px;object-fit:cover}.order-detail-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08)}.order-status-select{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#111722;color:inherit}@media(max-width:1100px){.orders-stats-grid{grid-template-columns:repeat(3,1fr)}.orders-filter-grid{grid-template-columns:1fr 1fr 1fr}.orders-filter-grid input[type=search]{grid-column:1/-1}}@media(max-width:650px){.orders-stats-grid{grid-template-columns:repeat(2,1fr)}.orders-filter-grid{grid-template-columns:1fr}.order-detail-grid{grid-template-columns:1fr}.orders-header{align-items:flex-start}}
@@ -2508,7 +2527,7 @@
     <div class="content-header orders-header">
       <div>
         <h2><i class="fas fa-chart-line"></i> Checkout Analytics — مركز التحليل</h2>
-        <p>لوحة احترافية تجمع Funnel، التحويل، السلات المتروكة، المبيعات ومؤشرات التدفق المالي للطلبات المتاحة.</p>
+        <p>مركز احترافي لقراءة رحلة العميل من السلة إلى إتمام الطلب، مع التحويل والمبيعات والطلبات غير المكتملة.</p>
       </div>
       <span class="ca-live">تحليل مركزي مباشر</span>
     </div>
@@ -2545,7 +2564,7 @@
 
     <div class="ca-grid-2">
       <div class="ca-panel">
-        <div class="ca-panel-title"><b>Checkout Funnel</b><span>من السلة إلى Purchase</span></div>
+        <div class="ca-panel-title"><b>رحلة إتمام الطلب</b><span>من السلة إلى الشراء</span></div>
         <div id="caFunnel" class="ca-funnel"></div>
       </div>
       <div class="ca-panel">
@@ -2584,7 +2603,7 @@
     </div>
 
     <div class="ca-grid-2">
-      <div class="ca-panel"><div class="ca-panel-title"><b>Checkout غير المكتمل</b><span id="caAbandonedRate">0%</span></div><div class="ca-table-wrap"><table class="ca-mini-table ca-table"><thead><tr><th>الجلسة</th><th>المرحلة</th><th>الولاية</th><th>التوصيل</th><th>قيمة السلة</th><th>آخر حدث</th><th>التاريخ</th></tr></thead><tbody id="caAbandonedBody"><tr><td colspan="7" class="ca-empty">لا توجد بيانات.</td></tr></tbody></table></div></div>
+      <div class="ca-panel"><div class="ca-panel-title"><b>Checkout غير المكتمل</b><span id="caAbandonedRate">0%</span></div><div class="ca-table-wrap"><table class="ca-mini-table ca-table"><thead><tr><th>الجلسة</th><th>آخر إجراء</th><th>الولاية</th><th>التوصيل</th><th>قيمة السلة</th><th>آخر حدث</th><th>التاريخ</th></tr></thead><tbody id="caAbandonedBody"><tr><td colspan="7" class="ca-empty">لا توجد بيانات.</td></tr></tbody></table></div></div>
       <div class="ca-panel"><div class="ca-panel-title"><b>مؤشرات رأس المال</b><span>قراءة تشغيلية</span></div>
         <div class="ca-finance-list">
           <div class="ca-finance-row"><span>رأس المال في الطلبات قيد المتابعة</span><b id="caCapitalAtRisk">0 دج</b></div>
@@ -8715,18 +8734,80 @@ function buildFinance(orders){
 }
 function renderMini(id,list,label){const h=document.getElementById(id);if(!h)return;if(!list.length){h.innerHTML='<div class="ca-empty">لا توجد بيانات.</div>';return}h.innerHTML='<table class="ca-mini-table"><thead><tr><th>'+label+'</th><th>الطلبات</th><th>القيمة</th><th>القطع</th><th>التحويل</th></tr></thead><tbody>'+list.slice(0,20).map(x=>`<tr><td>${esc(x.name)}</td><td>${num(x.orders||x.sessions||0)}</td><td>${money(x.revenue||0)}</td><td>${num(x.pieces||0)}</td><td>${x.conversionRate!=null?Number(x.conversionRate)+'%':'—'}</td></tr>`).join('')+'</tbody></table>'}
 function renderProducts(fin){const a=Object.entries(fin.byProduct).map(([name,v])=>({name,...v})).sort((a,b)=>b.revenue-a.revenue).slice(0,20);const h=document.getElementById('caProductTable');if(!h)return;if(!a.length){h.innerHTML='<div class="ca-empty">لا توجد بيانات منتجات في الطلبات.</div>';return}h.innerHTML='<table class="ca-mini-table"><thead><tr><th>المنتج</th><th>القطع</th><th>المبيعات</th></tr></thead><tbody>'+a.map(x=>`<tr><td>${esc(x.name)}</td><td>${num(x.pieces)}</td><td>${money(x.revenue)}</td></tr>`).join('')+'</tbody></table>'}
-function renderCheckout(d,orders=[]){const s=d.summary||{};const completedOrders=orders.filter(o=>['confirmed','delivered'].includes(statusKey(o.status)));const purchaseCount=completedOrders.length;const sessionCount=Number(s.sessions)||0;const conversion=sessionCount?Math.round(purchaseCount/sessionCount*1000)/10:Number(s.conversionRate||0);set('caSessions',num(sessionCount));set('caPurchases',num(purchaseCount));set('caAttempts',num(s.submitAttempts));set('caAbandoned',num(s.abandoned));set('caConversion','معدل الإتمام: '+conversion+'%');set('caAbandonedRate','معدل غير المكتمل: '+Number(s.abandonedRate||0)+'%');
- const funnel=(d.funnel||[]).map(x=>({...x}));const purchaseRow=funnel.find(x=>String(x.event||x.key||x.label||'').toLowerCase().includes('purchase'))||funnel[funnel.length-1];if(purchaseRow){purchaseRow.sessions=purchaseCount;purchaseRow.rate=sessionCount?Math.round(purchaseCount/sessionCount*1000)/10:0;}const f=document.getElementById('caFunnel');if(f)f.innerHTML=funnel.map(x=>`<div class="ca-funnel-row"><span class="ca-funnel-label">${esc(x.label)}</span><span class="ca-funnel-bar"><i style="width:${Math.max(0,Math.min(100,Number(x.rate)||0))}%></i></span><b class="ca-funnel-value">${num(x.sessions)} · ${Number(x.rate||0)}%</b></div>`).join('')||'<div class="ca-empty">لا توجد بيانات.</div>';
- const ab=document.getElementById('caAbandonedBody');if(ab)ab.innerHTML=(d.abandonedSessions||[]).map(x=>`<tr><td dir="ltr">${esc(x.sessionId)}</td><td>المرحلة ${esc(x.lastStage)}</td><td>${esc(x.wilaya||'—')}</td><td>${esc(x.deliveryType||'—')}</td><td>${money(x.cartValue||x.total||0)}</td><td>${esc(x.lastEvent||'—')}</td><td dir="ltr">${esc(x.lastAt||'—')}</td></tr>`).join('')||'<tr><td colspan="7" class="ca-empty">لا توجد جلسات غير مكتملة.</td></tr>';
+function journeyLabel(x){
+ const raw=String(x?.event||x?.key||x?.label||'').toLowerCase();
+ if(raw.includes('begin_checkout')||raw.includes('initiatecheckout')||raw.includes('بدء')||raw.includes('checkout'))return 'السلة';
+ if(raw.includes('wilaya_selected')||raw.includes('wilaya')||raw.includes('ولاية'))return 'اختيار الولاية';
+ if(raw.includes('delivery_selected')||raw.includes('delivery')||raw.includes('توصيل'))return 'طريقة التوصيل';
+ if(raw.includes('details_started')||raw.includes('details')||raw.includes('بيانات'))return 'بيانات الاتصال';
+ if(raw.includes('checkout_submit_attempt')||raw.includes('submit')||raw.includes('تأكيد')||raw.includes('طلب'))return 'تأكيد الطلب';
+ if(raw.includes('purchase')||raw.includes('شراء'))return 'الشراء';
+ if(raw.includes('abandon')||raw.includes('غير مكتمل'))return 'إتمام غير مكتمل';
+ return String(x?.label||'إتمام الطلب');
+}
+function journeyFromStage(v){
+ const n=Number(v);
+ if(n===1)return 'السلة';
+ if(n===2)return 'اختيار الولاية';
+ if(n===3)return 'طريقة التوصيل';
+ if(n===4)return 'بيانات الاتصال';
+ if(n===5)return 'تأكيد الطلب';
+ if(n===6)return 'الشراء';
+ return journeyLabel({label:String(v||'')});
+}
+function renderCheckout(d,orders=[]){
+ const s=d.summary||{};
+ const completedOrders=orders.filter(o=>['confirmed','delivered'].includes(statusKey(o.status)));
+ const purchaseCount=completedOrders.length;
+ const sessionCount=Number(s.sessions)||0;
+ const conversion=sessionCount?pct(purchaseCount,sessionCount):0;
+ set('caSessions',num(sessionCount));
+ set('caPurchases',num(purchaseCount));
+ set('caAttempts',num(s.submitAttempts));
+ set('caAbandoned',num(s.abandoned));
+ set('caConversion','معدل الإتمام: '+conversion+'%');
+ set('caAbandonedRate','معدل غير المكتمل: '+Number(s.abandonedRate||0)+'%');
+
+ const funnel=(d.funnel||[]).map(x=>({...x,label:journeyLabel(x)}));
+ const purchaseRow=funnel.find(x=>String(x.event||x.key||x.label||'').toLowerCase().includes('purchase'))||funnel[funnel.length-1];
+ if(purchaseRow){purchaseRow.sessions=purchaseCount;purchaseRow.rate=conversion;}
+ const f=document.getElementById('caFunnel');
+ if(f)f.innerHTML=funnel.map(x=>`<div class="ca-funnel-row"><span class="ca-funnel-label">${esc(x.label)}</span><span class="ca-funnel-bar"><i style="width:${Math.max(0,Math.min(100,Number(x.rate)||0))}%"></i></span><b class="ca-funnel-value">${num(x.sessions)} · ${Number(x.rate||0)}%</b></div>`).join('')||'<div class="ca-empty">لا توجد بيانات.</div>';
+
+ const ab=document.getElementById('caAbandonedBody');
+ if(ab)ab.innerHTML=(d.abandonedSessions||[]).map(x=>`<tr><td dir="ltr">${esc(x.sessionId)}</td><td>${esc(journeyFromStage(x.lastStage||x.lastEvent))}</td><td>${esc(x.wilaya||'—')}</td><td>${esc(x.deliveryType||'—')}</td><td>${money(x.cartValue||x.total||0)}</td><td>${esc(journeyLabel({event:x.lastEvent,label:x.lastEvent}))}</td><td dir="ltr">${esc(x.lastAt||'—')}</td></tr>`).join('')||'<tr><td colspan="7" class="ca-empty">لا توجد جلسات غير مكتملة.</td></tr>';
  renderMini('caWilayaTable',(d.byWilaya||[]).map(x=>({name:x.name,orders:x.sessions,revenue:0,pieces:0,conversionRate:x.conversionRate})), 'الولاية');
  renderMini('caDeliveryTable',(d.byDelivery||[]).map(x=>({name:x.name,orders:x.sessions,revenue:0,pieces:0,conversionRate:x.conversionRate})), 'طريقة التوصيل');
 }
-function renderFinance(orders,d){const fin=buildFinance(orders),s=d.summary||{};set('caRevenue',money(fin.delivered||fin.confirmed||0));set('caAov',money((fin.delivered||fin.confirmed||0)/(fin.delivered?Math.max(1,fin.byStatus.delivered):Math.max(1,s.purchases||0))));set('caPipeline',money(fin.pending));set('caDiscount',money(fin.discount));set('caPieces',num(fin.pieces));set('caAbandonedValue',money((d.abandonedSessions||[]).reduce((n,x)=>n+Number(x.cartValue||x.total||0),0)));
- set('caGrossOrders',money(fin.gross));set('caConfirmedRevenue',money(fin.confirmed));set('caDeliveredRevenue',money(fin.delivered));set('caPendingRevenue',money(fin.pending));set('caReturnedRevenue',money(fin.returned));set('caDeliveryRevenue',money(fin.delivery));set('caDiscountFinance',money(fin.discount));
+
+function renderFinance(orders,d){
+ const fin=buildFinance(orders),s=d.summary||{};
+ const completedRevenue=fin.confirmed+fin.delivered;
+ const completedCount=fin.byStatus.confirmed+fin.byStatus.delivered;
+ set('caRevenue',money(completedRevenue));
+ set('caAov',money(completedCount?completedRevenue/completedCount:0));
+ set('caPipeline',money(fin.pending));
+ set('caDiscount',money(fin.discount));
+ set('caPieces',num(fin.pieces));
+ set('caAbandonedValue',money((d.abandonedSessions||[]).reduce((n,x)=>n+Number(x.cartValue||x.total||0),0)));
+ set('caGrossOrders',money(fin.gross));
+ set('caConfirmedRevenue',money(fin.confirmed));
+ set('caDeliveredRevenue',money(fin.delivered));
+ set('caPendingRevenue',money(fin.pending));
+ set('caReturnedRevenue',money(fin.returned));
+ set('caDeliveryRevenue',money(fin.delivery));
+ set('caDiscountFinance',money(fin.discount));
  ['new','pending','confirmed','delivery','delivered','returned'].forEach(k=>set('caStatus'+({new:'New',pending:'Pending',confirmed:'Confirmed',delivery:'Delivery',delivered:'Delivered',returned:'Returned'}[k]),num(fin.byStatus[k]||0)));
- set('caCapitalAtRisk',money(fin.pending));set('caCapitalRealized',money(fin.delivered));set('caCapitalReturned',money(fin.returned));set('caCapitalConversion',Number(s.conversionRate||0)+'%');set('caCapitalAbandon',Number(s.abandonedRate||0)+'%');
- renderMini('caWilayaTable',Object.entries(fin.byWilaya).map(([name,v])=>({name,...v})).sort((a,b)=>b.revenue-a.revenue),'الولاية');renderMini('caDeliveryTable',Object.entries(fin.byDelivery).map(([name,v])=>({name,...v})).sort((a,b)=>b.revenue-a.revenue),'طريقة التوصيل');renderProducts(fin);
+ set('caCapitalAtRisk',money(fin.pending));
+ set('caCapitalRealized',money(completedRevenue));
+ set('caCapitalReturned',money(fin.returned));
+ set('caCapitalConversion',pct(completedCount,Number(s.sessions)||0)+'%');
+ set('caCapitalAbandon',Number(s.abandonedRate||0)+'%');
+ renderMini('caWilayaTable',Object.entries(fin.byWilaya).map(([name,v])=>({name,...v})).sort((a,b)=>b.revenue-a.revenue),'الولاية');
+ renderMini('caDeliveryTable',Object.entries(fin.byDelivery).map(([name,v])=>({name,...v})).sort((a,b)=>b.revenue-a.revenue),'طريقة التوصيل');
+ renderProducts(fin);
 }
+
 window.renderCheckoutAnalyticsLast=function(){if(!lastAnalytics)return;const mode=document.getElementById('caViewMode')?.value||'all';document.querySelectorAll('#checkout-analytics .ca-grid-2,#checkout-analytics .ca-grid-3,#checkout-analytics .ca-status-grid').forEach(e=>e.style.display='');if(mode==='finance'){document.querySelector('#checkout-analytics .ca-grid-2:nth-of-type(1)')?.style.setProperty('display','grid')} }
 window.clearCheckoutAnalyticsFilters=function(){['caDateFrom','caDateTo'].forEach(id=>{const e=document.getElementById(id);if(e)e.value=''});loadCheckoutAnalytics()}
 window.loadCheckoutAnalytics=async function(showMessage=false){const loading=document.getElementById('caLoading');if(loading)loading.style.display='block';try{const results=await Promise.allSettled([caApi(),caOrdersAll()]);const analyticsResult=results[0],ordersResult=results[1];if(analyticsResult.status==='rejected'&&ordersResult.status==='rejected')throw new Error(`فشل الاتصال بمصدري التحليل معًا.
