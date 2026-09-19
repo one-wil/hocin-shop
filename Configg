@@ -1,0 +1,3014 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>config.js و store-config.json</title></head><body>
+<h2>config.js</h2>
+<h2>config.js</h2><pre>
+// =============================================================================
+// ⚙️ ملف الإعدادات الرئيسي للمتجر
+// =============================================================================
+
+const STORE_CONFIG = {
+  &quot;PRODUCTS&quot;: {
+    &quot;1789476986031&quot;: {
+      &quot;name&quot;: &quot;لباس أطفال تركي&quot;,
+      &quot;price&quot;: 300,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;category&quot;: &quot;&quot;,
+      &quot;stock&quot;: 0,
+      &quot;featured&quot;: false,
+      &quot;availableColors&quot;: [
+        &quot;أحمر&quot;,
+        &quot;أزرق&quot;
+      ],
+      &quot;availableSizes&quot;: [
+        &quot;S&quot;,
+        &quot;M&quot;
+      ],
+      &quot;ageRanges&quot;: [],
+      &quot;colorImages&quot;: {
+        &quot;أحمر&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/dawn-dz/main/images/product-1789476986031-أحمر-1789477096937-modal3.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;M&quot;
+            }
+          ]
+        },
+        &quot;أزرق&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/dawn-dz/main/images/product-1789476986031-أزرق-1789477125433-modal4.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;M&quot;
+            }
+          ]
+        }
+      },
+      &quot;sizeGuide&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;guide&quot;: {}
+      },
+      &quot;createdAt&quot;: &quot;2026-09-15T12:56:26.031Z&quot;,
+      &quot;image&quot;: &quot;https://raw.githubusercontent.com/one-wil/dawn-dz/main/images/product-1789476986031-1789477052559-modal3.jpg&quot;,
+      &quot;updatedAt&quot;: &quot;2026-09-15T12:58:09.766Z&quot;
+    },
+    &quot;1789581423689&quot;: {
+      &quot;name&quot;: &quot; Ensemble polo&quot;,
+      &quot;price&quot;: 4000,
+      &quot;description&quot;: &quot; منتج عال الجودة ، بتفاصيل جدابة&quot;,
+      &quot;category&quot;: &quot;&quot;,
+      &quot;stock&quot;: 0,
+      &quot;featured&quot;: false,
+      &quot;availableColors&quot;: [
+        &quot;Black-olive Geen&quot;,
+        &quot;Beige - Black&quot;,
+        &quot;Gray-black&quot;
+      ],
+      &quot;availableSizes&quot;: [
+        &quot;S&quot;,
+        &quot;M&quot;,
+        &quot;L&quot;
+      ],
+      &quot;ageRanges&quot;: [],
+      &quot;colorImages&quot;: {
+        &quot;Black-olive Geen&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-Black-olive%20Geen-1789581763856-Messenger-creation-BFECA40B-57E0-4596-BD25-4F9D45BA3562.jpeg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;L&quot;
+            }
+          ]
+        },
+        &quot;Beige - Black&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-Beige%20-%20Black-1789581940027-Messenger-creation-810CA979-D104-4003-AC53-8D1BA722871C.jpeg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;L&quot;
+            }
+          ]
+        },
+        &quot;Gray-black&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-Gray-black-1789581994305-Messenger-creation-25516B0A-A522-42F1-9AB6-57299C553605.jpeg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;L&quot;
+            }
+          ]
+        }
+      },
+      &quot;sizeGuide&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;guide&quot;: {
+          &quot;S&quot;: {
+            &quot;heightFrom&quot;: 0,
+            &quot;heightTo&quot;: 0,
+            &quot;weightFrom&quot;: 0,
+            &quot;weightTo&quot;: 0
+          },
+          &quot;M&quot;: {
+            &quot;heightFrom&quot;: 0,
+            &quot;heightTo&quot;: 0,
+            &quot;weightFrom&quot;: 0,
+            &quot;weightTo&quot;: 0
+          },
+          &quot;L&quot;: {
+            &quot;heightFrom&quot;: 0,
+            &quot;heightTo&quot;: 0,
+            &quot;weightFrom&quot;: 0,
+            &quot;weightTo&quot;: 0
+          }
+        }
+      },
+      &quot;createdAt&quot;: &quot;2026-09-16T17:57:03.689Z&quot;,
+      &quot;image&quot;: &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-1789581668031-Messenger-creation-810CA979-D104-4003-AC53-8D1BA722871C.jpeg&quot;,
+      &quot;updatedAt&quot;: &quot;2026-09-16T18:08:38.128Z&quot;
+    },
+    &quot;1789652772129&quot;: {
+      &quot;name&quot;: &quot;فستان بنات&quot;,
+      &quot;price&quot;: 50000,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;category&quot;: &quot;&quot;,
+      &quot;stock&quot;: 0,
+      &quot;featured&quot;: false,
+      &quot;availableColors&quot;: [
+        &quot;أبيض&quot;,
+        &quot;أسود&quot;
+      ],
+      &quot;availableSizes&quot;: [
+        &quot;S&quot;,
+        &quot;M&quot;
+      ],
+      &quot;ageRanges&quot;: [],
+      &quot;colorImages&quot;: {
+        &quot;أبيض&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789652772129-أبيض-1789653498662-1000028225.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;13&quot;,
+              &quot;ageTo&quot;: &quot;2&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;13&quot;,
+              &quot;ageTo&quot;: &quot;ب5&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            }
+          ]
+        },
+        &quot;أسود&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789652772129-أسود-1789653582687-1000028231.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: []
+        }
+      },
+      &quot;sizeGuide&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;guide&quot;: {}
+      },
+      &quot;createdAt&quot;: &quot;2026-09-17T13:46:12.129Z&quot;,
+      &quot;image&quot;: &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789652772129-1789652819808-1000028231.jpg&quot;,
+      &quot;updatedAt&quot;: &quot;2026-09-17T13:59:57.655Z&quot;
+    }
+  },
+  &quot;PRODUCT_ORDER&quot;: {
+    &quot;1789476986031&quot;: 2,
+    &quot;1789581423689&quot;: 1,
+    &quot;1789652772129&quot;: 3
+  },
+  &quot;DELIVERY_PRICES&quot;: {
+    &quot;01 - أدرار&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;02 - الشلف&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;03 - الأغواط&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 600
+    },
+    &quot;04 - أم البواقي&quot;: {
+      &quot;home&quot;: 650,
+      &quot;desk&quot;: 400
+    },
+    &quot;05 - باتنة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;06 - بجاية&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;07 - بسكرة&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;08 - بشار&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;09 - البليدة&quot;: {
+      &quot;home&quot;: 500,
+      &quot;desk&quot;: 250
+    },
+    &quot;10 - البويرة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;11 - تمنراست&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 800
+    },
+    &quot;12 - تبسة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;13 - تلمسان&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;14 - تيارت&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;15 - تيزي وزو&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;16 - الجزائر&quot;: {
+      &quot;home&quot;: 500,
+      &quot;desk&quot;: 250
+    },
+    &quot;17 - الجلفة&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;18 - جيجل&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;19 - سطيف&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;20 - سعيدة&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;21 - سكيكدة&quot;: {
+      &quot;home&quot;: 600,
+      &quot;desk&quot;: 400
+    },
+    &quot;22 - سيدي بلعباس&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;23 - عنابة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;24 - قالمة&quot;: {
+      &quot;home&quot;: 600,
+      &quot;desk&quot;: 400
+    },
+    &quot;25 - قسنطينة&quot;: {
+      &quot;home&quot;: 600,
+      &quot;desk&quot;: 400
+    },
+    &quot;26 - المدية&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;27 - مستغانم&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;28 - المسيلة&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;29 - معسكر&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;30 - ورقلة&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;31 - وهران&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;32 - البيض&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 500
+    },
+    &quot;33 - إليزي&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 600
+    },
+    &quot;34 - برج بوعريريج&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;35 - بومرداس&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;36 - الطارف&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;37 - تندوف&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 600
+    },
+    &quot;38 - تيسمسيلت&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;39 - الوادي&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;40 - خنشلة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 500
+    },
+    &quot;41 - سوق أهراس&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;42 - تيبازة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;43 - ميلة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 450
+    },
+    &quot;44 - عين الدفلى&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;45 - النعامة&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 500
+    },
+    &quot;46 - عين تموشنت&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;47 - غرداية&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;48 - غليزان&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;49 - تيميمون&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;50 - برج باجي مختار&quot;: {
+      &quot;home&quot;: 1200,
+      &quot;desk&quot;: 650
+    },
+    &quot;51 - أولاد جلال&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;52 - بني عباس&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;53 - عين صالح&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 700
+    },
+    &quot;54 - عين قزام&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 700
+    },
+    &quot;55 - توقرت&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 550
+    },
+    &quot;56 - جانت&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 500
+    },
+    &quot;57 - المغير&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 550
+    },
+    &quot;58 - المنيعة&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 400
+    }
+  },
+  &quot;COMMUNES_SOURCE&quot;: &quot;https://raw.githubusercontent.com/DZBuild-com/dzship/main/data/communes.json&quot;,
+
+  &quot;FREE_DELIVERY&quot;: {
+    &quot;desk&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;minAmount&quot;: 0,
+      &quot;wilayas&quot;: [],
+      &quot;minQuantity&quot;: 1
+    },
+    &quot;home&quot;: {
+      &quot;enabled&quot;: false,
+      &quot;minAmount&quot;: 0,
+      &quot;wilayas&quot;: [],
+      &quot;minQuantity&quot;: 3
+    },
+    &quot;freeDeliveryProducts&quot;: [
+      1765137505304,
+      1765145035052,
+      1765145814607,
+      1789476986031,
+      1789581423689
+    ]
+  },
+  &quot;DISCOUNTS&quot;: {
+    &quot;enableQuantityDiscount&quot;: false,
+    &quot;minQuantityForDiscount&quot;: 0,
+    &quot;discountPerItem&quot;: 0,
+    &quot;discountScope&quot;: &quot;selected&quot;,
+    &quot;discountProducts&quot;: [],
+    &quot;enablePromotionalDiscount&quot;: false,
+    &quot;promotionalDiscountPercent&quot;: 0,
+    &quot;promotionalDiscountedPrice&quot;: null,
+    &quot;promoDiscountScope&quot;: &quot;selected&quot;,
+    &quot;promoDiscountProducts&quot;: []
+  },
+  &quot;STORE_INFO&quot;: {
+    &quot;name&quot;: &quot;Vol-Shop1&quot;,
+    &quot;storeIcon&quot;: &quot;-&quot;,
+    &quot;storeTitle&quot;: &quot;-&quot;,
+    &quot;tagline&quot;: &quot;متجر الأحلام &quot;,
+    &quot;phoneNumbers&quot;: [
+      &quot;0671466489&quot;,
+      &quot;0551102155&quot;
+    ],
+    &quot;logo&quot;: &quot;https://raw.githubusercontent.com/one-wil/lip-waw/main/images/store-logo-1789242847980-file-0000000012a481f4b3f05ecbb28e82cd.png&quot;,
+    &quot;facebookUrl&quot;: &quot;&quot;,
+    &quot;instagramUrl&quot;: &quot;&quot;,
+    &quot;messengerUrl&quot;: &quot;&quot;,
+    &quot;viberNumber&quot;: &quot;&quot;,
+    &quot;whatsappNumber&quot;: &quot;213671466489&quot;,
+    &quot;whatsappUrl&quot;: &quot;https://wa.me/213671466489&quot;
+  },
+  &quot;GOOGLE_SHEETS&quot;: {
+    &quot;url&quot;: &quot;&quot;,
+    &quot;description&quot;: &quot;  جدول الطلبات&quot;,
+    &quot;autoUpdate&quot;: false
+  },
+  &quot;AVAILABLE_COLORS&quot;: [
+    &quot;أبيض&quot;,
+    &quot;أسود&quot;,
+    &quot;أحمر&quot;,
+    &quot;أزرق&quot;,
+    &quot;أخضر&quot;,
+    &quot;وردي&quot;,
+    &quot;رمادي&quot;,
+    &quot;أصفر&quot;,
+    &quot;vert motard&quot;,
+    &quot;Vert pistache&quot;,
+    &quot;Beige clair&quot;,
+    &quot;Marron&quot;,
+    &quot;Marron clair&quot;,
+    &quot;Vert  Kaki&quot;,
+    &quot;Olive Green-black&quot;,
+    &quot;Black-olive Geen&quot;,
+    &quot;Beige - Black&quot;,
+    &quot;Gray-black&quot;
+  ],
+  &quot;AVAILABLE_SIZES&quot;: [
+    &quot;S&quot;,
+    &quot;M&quot;,
+    &quot;L&quot;,
+    &quot;XL&quot;,
+    &quot;XXL&quot;,
+    &quot;XXXL&quot;,
+    &quot;38&quot;,
+    &quot;39&quot;,
+    &quot;40&quot;,
+    &quot;41&quot;,
+    &quot;42&quot;,
+    &quot;43&quot;,
+    &quot;44&quot;,
+    &quot;45&quot;,
+    &quot;45&quot;,
+    &quot;46&quot;,
+    &quot;47&quot;,
+    &quot;48&quot;,
+    &quot;49&quot;,
+    &quot;50&quot;,
+    &quot;38-40&quot;,
+    &quot;42-44&quot;,
+    &quot;46-48&quot;
+  ],
+  &quot;SIZE_GUIDE&quot;: {
+    &quot;38&quot;: {
+      &quot;heightFrom&quot;: 150,
+      &quot;heightTo&quot;: 160,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 70,
+      &quot;enabled&quot;: false
+    },
+    &quot;39&quot;: {
+      &quot;heightFrom&quot;: 152,
+      &quot;heightTo&quot;: 162,
+      &quot;weightFrom&quot;: 53,
+      &quot;weightTo&quot;: 74,
+      &quot;enabled&quot;: false
+    },
+    &quot;40&quot;: {
+      &quot;heightFrom&quot;: 154,
+      &quot;heightTo&quot;: 164,
+      &quot;weightFrom&quot;: 56,
+      &quot;weightTo&quot;: 78,
+      &quot;enabled&quot;: false
+    },
+    &quot;41&quot;: {
+      &quot;heightFrom&quot;: 156,
+      &quot;heightTo&quot;: 166,
+      &quot;weightFrom&quot;: 59,
+      &quot;weightTo&quot;: 82,
+      &quot;enabled&quot;: false
+    },
+    &quot;42&quot;: {
+      &quot;heightFrom&quot;: 158,
+      &quot;heightTo&quot;: 168,
+      &quot;weightFrom&quot;: 62,
+      &quot;weightTo&quot;: 86,
+      &quot;enabled&quot;: false
+    },
+    &quot;43&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 170,
+      &quot;weightFrom&quot;: 65,
+      &quot;weightTo&quot;: 90,
+      &quot;enabled&quot;: false
+    },
+    &quot;44&quot;: {
+      &quot;heightFrom&quot;: 162,
+      &quot;heightTo&quot;: 172,
+      &quot;weightFrom&quot;: 68,
+      &quot;weightTo&quot;: 94,
+      &quot;enabled&quot;: false
+    },
+    &quot;45&quot;: {
+      &quot;heightFrom&quot;: 164,
+      &quot;heightTo&quot;: 174,
+      &quot;weightFrom&quot;: 71,
+      &quot;weightTo&quot;: 98,
+      &quot;enabled&quot;: false
+    },
+    &quot;46&quot;: {
+      &quot;heightFrom&quot;: 166,
+      &quot;heightTo&quot;: 176,
+      &quot;weightFrom&quot;: 74,
+      &quot;weightTo&quot;: 102,
+      &quot;enabled&quot;: false
+    },
+    &quot;47&quot;: {
+      &quot;heightFrom&quot;: 168,
+      &quot;heightTo&quot;: 178,
+      &quot;weightFrom&quot;: 77,
+      &quot;weightTo&quot;: 106,
+      &quot;enabled&quot;: false
+    },
+    &quot;48&quot;: {
+      &quot;heightFrom&quot;: 170,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 80,
+      &quot;weightTo&quot;: 110,
+      &quot;enabled&quot;: false
+    },
+    &quot;49&quot;: {
+      &quot;heightFrom&quot;: 172,
+      &quot;heightTo&quot;: 182,
+      &quot;weightFrom&quot;: 83,
+      &quot;weightTo&quot;: 114,
+      &quot;enabled&quot;: false
+    },
+    &quot;S&quot;: {
+      &quot;heightFrom&quot;: 120,
+      &quot;heightTo&quot;: 130,
+      &quot;weightFrom&quot;: 14,
+      &quot;weightTo&quot;: 16,
+      &quot;enabled&quot;: false
+    },
+    &quot;M&quot;: {
+      &quot;heightFrom&quot;: 130,
+      &quot;heightTo&quot;: 150,
+      &quot;weightFrom&quot;: 16,
+      &quot;weightTo&quot;: 22,
+      &quot;enabled&quot;: false
+    },
+    &quot;L&quot;: {
+      &quot;heightFrom&quot;: 180,
+      &quot;heightTo&quot;: 195,
+      &quot;weightFrom&quot;: 70,
+      &quot;weightTo&quot;: 90,
+      &quot;enabled&quot;: false
+    },
+    &quot;XL&quot;: {
+      &quot;heightFrom&quot;: 185,
+      &quot;heightTo&quot;: 200,
+      &quot;weightFrom&quot;: 85,
+      &quot;weightTo&quot;: 110,
+      &quot;enabled&quot;: false
+    },
+    &quot;XXL&quot;: {
+      &quot;heightFrom&quot;: 190,
+      &quot;heightTo&quot;: 205,
+      &quot;weightFrom&quot;: 95,
+      &quot;weightTo&quot;: 120,
+      &quot;enabled&quot;: false
+    },
+    &quot;S1&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;S2&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;S3&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;M1&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;M2&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;M3&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;XXXL&quot;: {
+      &quot;heightFrom&quot;: 195,
+      &quot;heightTo&quot;: 210,
+      &quot;weightFrom&quot;: 105,
+      &quot;weightTo&quot;: 140,
+      &quot;enabled&quot;: false
+    }
+  },
+  &quot;PIXEL_CODES&quot;: {
+    &quot;facebook&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;pixelId&quot;: &quot;&quot;,
+      &quot;events&quot;: {
+        &quot;pageView&quot;: true,
+        &quot;addToCart&quot;: true,
+        &quot;purchase&quot;: true,
+        &quot;initiateCheckout&quot;: true,
+        &quot;viewContent&quot;: true
+      }
+    },
+    &quot;tiktok&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;pixelId&quot;: &quot;&quot;,
+      &quot;events&quot;: {
+        &quot;pageView&quot;: true,
+        &quot;addToCart&quot;: true,
+        &quot;purchase&quot;: true,
+        &quot;initiateCheckout&quot;: true,
+        &quot;viewContent&quot;: true
+      }
+    }
+  },
+  &quot;POINTS_SYSTEM&quot;: {
+    &quot;currentPoints&quot;: 1000,
+    &quot;remainingDays&quot;: 30,
+    &quot;lastReset&quot;: &quot;2026-08-22T20:58:39.826Z&quot;,
+    &quot;planType&quot;: &quot;gratuit&quot;,
+    &quot;monthlyPoints&quot;: 1000,
+    &quot;resetPeriod&quot;: 30,
+    &quot;currentMonthDays&quot;: 30,
+    &quot;lastUpdate&quot;: &quot;2025-12-13T18:59:22.674Z&quot;,
+    &quot;pointsHistory&quot;: [
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:05:36.186Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:06:34.383Z&quot;,
+        &quot;action&quot;: &quot;UPLOAD_IMAGE&quot;,
+        &quot;pointsBefore&quot;: 482,
+        &quot;pointsAfter&quot;: 481,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:09:33.670Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:16:51.121Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:29:49.030Z&quot;,
+        &quot;action&quot;: &quot;FULL_SYNC&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:37:02.011Z&quot;,
+        &quot;action&quot;: &quot;FULL_SYNC&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:37:46.228Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 482,
+        &quot;pointsAfter&quot;: 480,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:41:17.205Z&quot;,
+        &quot;action&quot;: &quot;UPLOAD_IMAGE&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 483,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:41:27.220Z&quot;,
+        &quot;action&quot;: &quot;FULL_SYNC&quot;,
+        &quot;pointsBefore&quot;: 483,
+        &quot;pointsAfter&quot;: 481,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:46:48.645Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 481,
+        &quot;pointsAfter&quot;: 479,
+        &quot;user&quot;: &quot;admin&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2026-08-22T22:32:22.940Z&quot;
+  },
+  &quot;FREE_DELIVERY_PRODUCTS&quot;: [
+    1765456782838
+  ],
+  &quot;config&quot;: {
+    &quot;PRODUCTS&quot;: {},
+    &quot;DELIVERY_PRICES&quot;: {
+      &quot;01 - أدرار&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;02 - الشلف&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;03 - الأغواط&quot;: {
+        &quot;home&quot;: 1000,
+        &quot;desk&quot;: 600
+      },
+      &quot;04 - أم البواقي&quot;: {
+        &quot;home&quot;: 650,
+        &quot;desk&quot;: 400
+      },
+      &quot;05 - باتنة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;06 - بجاية&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;07 - بسكرة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;08 - بشار&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;09 - البليدة&quot;: {
+        &quot;home&quot;: 500,
+        &quot;desk&quot;: 250
+      },
+      &quot;10 - البويرة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;11 - تمنراست&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 800
+      },
+      &quot;12 - تبسة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;13 - تلمسان&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;14 - تيارت&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;15 - تيزي وزو&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;16 - الجزائر&quot;: {
+        &quot;home&quot;: 500,
+        &quot;desk&quot;: 250
+      },
+      &quot;17 - الجلفة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;18 - جيجل&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;19 - سطيف&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;20 - سعيدة&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;21 - سكيكدة&quot;: {
+        &quot;home&quot;: 600,
+        &quot;desk&quot;: 400
+      },
+      &quot;22 - سيدي بلعباس&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;23 - عنابة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;24 - قالمة&quot;: {
+        &quot;home&quot;: 600,
+        &quot;desk&quot;: 400
+      },
+      &quot;25 - قسنطينة&quot;: {
+        &quot;home&quot;: 600,
+        &quot;desk&quot;: 400
+      },
+      &quot;26 - المدية&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;27 - مستغانم&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;28 - المسيلة&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;29 - معسكر&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;30 - ورقلة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;31 - وهران&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;32 - البيض&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 500
+      },
+      &quot;33 - إليزي&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 600
+      },
+      &quot;34 - برج بوعريريج&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;35 - بومرداس&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;36 - الطارف&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;37 - تندوف&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 600
+      },
+      &quot;38 - تيسمسيلت&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;39 - الوادي&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;40 - خنشلة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 500
+      },
+      &quot;41 - سوق أهراس&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;42 - تيبازة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;43 - ميلة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 450
+      },
+      &quot;44 - عين الدفلى&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;45 - النعامة&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 500
+      },
+      &quot;46 - عين تموشنت&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;47 - غرداية&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;48 - غليزان&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;49 - تيميمون&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;50 - برج باجي مختار&quot;: {
+        &quot;home&quot;: 1200,
+        &quot;desk&quot;: 650
+      },
+      &quot;51 - أولاد جلال&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;52 - بني عباس&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;53 - عين صالح&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 700
+      },
+      &quot;54 - عين قزام&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 700
+      },
+      &quot;55 - توقرت&quot;: {
+        &quot;home&quot;: 950,
+        &quot;desk&quot;: 550
+      },
+      &quot;56 - جانت&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 500
+      },
+      &quot;57 - المغير&quot;: {
+        &quot;home&quot;: 950,
+        &quot;desk&quot;: 550
+      },
+      &quot;58 - المنيعة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 400
+      }
+    },
+    &quot;FREE_DELIVERY&quot;: {
+      &quot;desk&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;minQuantity&quot;: null,
+        &quot;wilayas&quot;: []
+      },
+      &quot;home&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;minQuantity&quot;: null,
+        &quot;wilayas&quot;: []
+      },
+      &quot;freeDeliveryProducts&quot;: []
+    },
+    &quot;DISCOUNTS&quot;: {
+      &quot;enableQuantityDiscount&quot;: false,
+      &quot;minQuantityForDiscount&quot;: 2,
+      &quot;discountPerItem&quot;: 300,
+      &quot;discountScope&quot;: &quot;all&quot;,
+      &quot;discountProducts&quot;: [],
+      &quot;enablePromotionalDiscount&quot;: false,
+      &quot;promotionalDiscountPercent&quot;: 20,
+      &quot;promotionalDiscountedPrice&quot;: 0,
+      &quot;promoDiscountScope&quot;: &quot;all&quot;,
+      &quot;promoDiscountProducts&quot;: []
+    },
+    &quot;STORE_INFO&quot;: {
+      &quot;name&quot;: &quot;&quot;,
+      &quot;storeIcon&quot;: &quot;&quot;,
+      &quot;storeTitle&quot;: &quot; أحدث موديلات &quot;,
+      &quot;tagline&quot;: &quot;متجر أفخم الملابس&quot;,
+      &quot;phoneNumbers&quot;: [
+        &quot;0xxxxxxxxx&quot;,
+        &quot;0xxxxxxxxx&quot;
+      ],
+      &quot;logo&quot;: &quot;&quot;,
+      &quot;facebookUrl&quot;: &quot;&quot;,
+      &quot;instagramUrl&quot;: &quot;&quot;,
+      &quot;messengerUrl&quot;: &quot;&quot;,
+      &quot;viberNumber&quot;: &quot;&quot;,
+      &quot;whatsappNumber&quot;: &quot;&quot;,
+      &quot;whatsappUrl&quot;: &quot;&quot;
+    },
+    &quot;GOOGLE_SHEETS&quot;: {
+      &quot;url&quot;: &quot;&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;autoUpdate&quot;: false
+    },
+    &quot;AVAILABLE_COLORS&quot;: [
+      &quot;أبيض&quot;,
+      &quot;أسود&quot;,
+      &quot;أحمر&quot;,
+      &quot;أزرق&quot;,
+      &quot;أخضر&quot;,
+      &quot;وردي&quot;,
+      &quot;رمادي&quot;,
+      &quot;أصفر&quot;
+    ],
+    &quot;AVAILABLE_SIZES&quot;: [
+      &quot;S&quot;,
+      &quot;S1&quot;,
+      &quot;S2&quot;,
+      &quot;S3&quot;,
+      &quot;M&quot;,
+      &quot;M1&quot;,
+      &quot;M2&quot;,
+      &quot;M3&quot;,
+      &quot;L&quot;,
+      &quot;XL&quot;,
+      &quot;XXL&quot;,
+      &quot;XXXL&quot;,
+      &quot;38&quot;,
+      &quot;39&quot;,
+      &quot;40&quot;,
+      &quot;41&quot;,
+      &quot;42&quot;,
+      &quot;43&quot;,
+      &quot;44&quot;,
+      &quot;45&quot;,
+      &quot;45&quot;,
+      &quot;46&quot;,
+      &quot;47&quot;,
+      &quot;48&quot;,
+      &quot;49&quot;,
+      &quot;50&quot;
+    ],
+    &quot;SIZE_GUIDE&quot;: {
+      &quot;38&quot;: {
+        &quot;heightFrom&quot;: 150,
+        &quot;heightTo&quot;: 160,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 70,
+        &quot;enabled&quot;: false
+      },
+      &quot;39&quot;: {
+        &quot;heightFrom&quot;: 152,
+        &quot;heightTo&quot;: 162,
+        &quot;weightFrom&quot;: 53,
+        &quot;weightTo&quot;: 74,
+        &quot;enabled&quot;: false
+      },
+      &quot;40&quot;: {
+        &quot;heightFrom&quot;: 154,
+        &quot;heightTo&quot;: 164,
+        &quot;weightFrom&quot;: 56,
+        &quot;weightTo&quot;: 78,
+        &quot;enabled&quot;: false
+      },
+      &quot;41&quot;: {
+        &quot;heightFrom&quot;: 156,
+        &quot;heightTo&quot;: 166,
+        &quot;weightFrom&quot;: 59,
+        &quot;weightTo&quot;: 82,
+        &quot;enabled&quot;: false
+      },
+      &quot;42&quot;: {
+        &quot;heightFrom&quot;: 158,
+        &quot;heightTo&quot;: 168,
+        &quot;weightFrom&quot;: 62,
+        &quot;weightTo&quot;: 86,
+        &quot;enabled&quot;: false
+      },
+      &quot;43&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 170,
+        &quot;weightFrom&quot;: 65,
+        &quot;weightTo&quot;: 90,
+        &quot;enabled&quot;: false
+      },
+      &quot;44&quot;: {
+        &quot;heightFrom&quot;: 162,
+        &quot;heightTo&quot;: 172,
+        &quot;weightFrom&quot;: 68,
+        &quot;weightTo&quot;: 94,
+        &quot;enabled&quot;: false
+      },
+      &quot;45&quot;: {
+        &quot;heightFrom&quot;: 164,
+        &quot;heightTo&quot;: 174,
+        &quot;weightFrom&quot;: 71,
+        &quot;weightTo&quot;: 98,
+        &quot;enabled&quot;: false
+      },
+      &quot;46&quot;: {
+        &quot;heightFrom&quot;: 166,
+        &quot;heightTo&quot;: 176,
+        &quot;weightFrom&quot;: 74,
+        &quot;weightTo&quot;: 102,
+        &quot;enabled&quot;: false
+      },
+      &quot;47&quot;: {
+        &quot;heightFrom&quot;: 168,
+        &quot;heightTo&quot;: 178,
+        &quot;weightFrom&quot;: 77,
+        &quot;weightTo&quot;: 106,
+        &quot;enabled&quot;: false
+      },
+      &quot;48&quot;: {
+        &quot;heightFrom&quot;: 170,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 80,
+        &quot;weightTo&quot;: 110,
+        &quot;enabled&quot;: false
+      },
+      &quot;49&quot;: {
+        &quot;heightFrom&quot;: 172,
+        &quot;heightTo&quot;: 182,
+        &quot;weightFrom&quot;: 83,
+        &quot;weightTo&quot;: 114,
+        &quot;enabled&quot;: false
+      },
+      &quot;S&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 175,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 65,
+        &quot;enabled&quot;: false
+      },
+      &quot;M&quot;: {
+        &quot;heightFrom&quot;: 170,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 65,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: true
+      },
+      &quot;L&quot;: {
+        &quot;heightFrom&quot;: 180,
+        &quot;heightTo&quot;: 195,
+        &quot;weightFrom&quot;: 70,
+        &quot;weightTo&quot;: 90,
+        &quot;enabled&quot;: true
+      },
+      &quot;XL&quot;: {
+        &quot;heightFrom&quot;: 185,
+        &quot;heightTo&quot;: 200,
+        &quot;weightFrom&quot;: 85,
+        &quot;weightTo&quot;: 110,
+        &quot;enabled&quot;: true
+      },
+      &quot;XXL&quot;: {
+        &quot;heightFrom&quot;: 190,
+        &quot;heightTo&quot;: 205,
+        &quot;weightFrom&quot;: 95,
+        &quot;weightTo&quot;: 120,
+        &quot;enabled&quot;: true
+      },
+      &quot;S1&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;S2&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;S3&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;M1&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;M2&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;M3&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;XXXL&quot;: {
+        &quot;heightFrom&quot;: 195,
+        &quot;heightTo&quot;: 210,
+        &quot;weightFrom&quot;: 105,
+        &quot;weightTo&quot;: 140,
+        &quot;enabled&quot;: false
+      }
+    }
+  },
+  &quot;storageKeys&quot;: {},
+  &quot;timestamp&quot;: &quot;2025-12-07T10:15:31.349Z&quot;,
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;LANDING_PAGES&quot;: {
+    &quot;templates&quot;: [
+      {
+        &quot;id&quot;: &quot;template1&quot;,
+        &quot;name&quot;: &quot;قالب بسيط&quot;,
+        &quot;description&quot;: &quot;صفحة هبوط بسيطة وعصرية&quot;,
+        &quot;features&quot;: [
+          &quot;صورة كبيرة&quot;,
+          &quot;وصف مختصر&quot;,
+          &quot;زر شراء واضح&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;template2&quot;,
+        &quot;name&quot;: &quot;قالب متميز&quot;,
+        &quot;description&quot;: &quot;صفحة هبوط متكاملة مع مميزات&quot;,
+        &quot;features&quot;: [
+          &quot;معرض صور&quot;,
+          &quot;معلومات مفصلة&quot;,
+          &quot;أسئلة شائعة&quot;,
+          &quot;تعليقات العملاء&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;template3&quot;,
+        &quot;name&quot;: &quot;قالب ترويجي&quot;,
+        &quot;description&quot;: &quot;صفحة هبوط مخصصة للعروض&quot;,
+        &quot;features&quot;: [
+          &quot;عداد تنازلي&quot;,
+          &quot;عرض خاص&quot;,
+          &quot;شهادة جودة&quot;,
+          &quot;ضمان رضا&quot;
+        ]
+      }
+    ],
+    &quot;pages&quot;: {
+      &quot;1766870645677&quot;: {
+        &quot;productId&quot;: 1766870645677,
+        &quot;enabled&quot;: true,
+        &quot;title&quot;: &quot;بدلة رياضية&quot;,
+        &quot;subtitle&quot;: &quot;أفضل عرض لهذا المنتج&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;template&quot;: &quot;template1&quot;,
+        &quot;features&quot;: [
+          &quot;جودة عالية&quot;,
+          &quot;توصيل سريع&quot;,
+          &quot;ضمان الجودة&quot;,
+          &quot;دعم فني&quot;
+        ],
+        &quot;testimonials&quot;: [],
+        &quot;faq&quot;: [],
+        &quot;createdAt&quot;: &quot;2026-01-16T20:12:16.244Z&quot;,
+        &quot;updatedAt&quot;: &quot;2026-01-16T20:12:16.244Z&quot;
+      }
+    },
+    &quot;analytics&quot;: {
+      &quot;1766870645677&quot;: {
+        &quot;views&quot;: 0,
+        &quot;clicks&quot;: 0,
+        &quot;conversions&quot;: 0,
+        &quot;averageTime&quot;: 0,
+        &quot;lastVisit&quot;: null,
+        &quot;dailyStats&quot;: {},
+        &quot;sourceStats&quot;: {}
+      }
+    },
+    &quot;settings&quot;: {
+      &quot;autoGenerate&quot;: true,
+      &quot;defaultTemplate&quot;: &quot;template1&quot;,
+      &quot;trackClicks&quot;: true,
+      &quot;trackTime&quot;: true,
+      &quot;conversionGoal&quot;: &quot;purchase&quot;
+    }
+  },
+  &quot;PRODUCT_CATEGORIES&quot;: [
+    &quot;ملابس أطفال&quot;,
+    &quot;ملابس رجالية&quot;,
+    &quot;ملابس نسائية&quot;,
+    &quot;أحذية&quot;,
+    &quot;عطور رجالية&quot;,
+    &quot;عطور نسائية&quot;,
+    &quot;قبعات&quot;,
+    &quot;ساعات رجالية&quot;,
+    &quot;ساعات نسائية&quot;
+  ],
+  &quot;HAT_TYPES&quot;: [
+    &quot;بيسبول&quot;,
+    &quot;بريه&quot;,
+    &quot;قبعة شمس&quot;,
+    &quot;قبعة صوف&quot;,
+    &quot;بكيني&quot;,
+    &quot;قبعة رياضية&quot;,
+    &quot;قبعة كلاسيكية&quot;
+  ],
+  &quot;WATCH_TYPES&quot;: [
+    &quot;ساعة يد&quot;,
+    &quot;ساعة حائط&quot;,
+    &quot;ساعة ذكية&quot;,
+    &quot;ساعة كوارتز&quot;,
+    &quot;ساعة ميكانيكية&quot;,
+    &quot;ساعة فاخرة&quot;
+  ],
+  &quot;PERFUME_TYPES&quot;: [
+    &quot;عطر&quot;,
+    &quot;ماء تواليت&quot;,
+    &quot;ماء عطر&quot;,
+    &quot;كريم عطري&quot;,
+    &quot;سبراي جسم&quot;
+  ],
+  &quot;PERFUME_NOTES&quot;: [
+    &quot;حمضيات&quot;,
+    &quot;زهور&quot;,
+    &quot;خشب&quot;,
+    &quot;أعشاب&quot;,
+    &quot;توابل&quot;,
+    &quot;فواكه&quot;,
+    &quot;مسك&quot;,
+    &quot;عنبر&quot;
+  ],
+  &quot;ORDERS&quot;: [],
+  &quot;LICENSE_SERVER&quot;: &quot;https://storemaster-worker.vivavoir150.workers.dev&quot;
+};
+
+// =============================================================================
+// 🛍️ دالة تحميل المنتجات
+// =============================================================================
+
+function loadProductsConfig() {
+    return STORE_CONFIG.PRODUCTS;
+}
+
+// =============================================================================
+// 🚚 دالة تحميل أسعار التوصيل
+// =============================================================================
+
+function loadDeliveryConfig() {
+    return {
+        deliveryPrices: STORE_CONFIG.DELIVERY_PRICES || {},
+        freeDelivery: STORE_CONFIG.FREE_DELIVERY || {},
+        freeDeliveryProducts: STORE_CONFIG.FREE_DELIVERY.freeDeliveryProducts || []
+    };
+}
+
+// =============================================================================
+// 💰 دالة تحميل إعدادات الخصم
+// =============================================================================
+
+function loadDiscountConfig() {
+    return STORE_CONFIG.DISCOUNTS || {};
+}
+
+// =============================================================================
+// 🏪 دالة تحميل معلومات المتجر
+// =============================================================================
+
+function loadStoreInfo() {
+    return STORE_CONFIG.STORE_INFO || {};
+}
+
+// =============================================================================
+// 🎨 دالة تحميل الألوان والمقاسات
+// =============================================================================
+
+function loadSizesColorsConfig() {
+    return {
+        availableColors: STORE_CONFIG.AVAILABLE_COLORS || [],
+        availableSizes: STORE_CONFIG.AVAILABLE_SIZES || [],
+        sizeGuide: STORE_CONFIG.SIZE_GUIDE || {}
+    };
+}
+
+// =============================================================================
+// 📊 دالة تحميل إعدادات البكسل
+// =============================================================================
+
+function loadPixelConfig() {
+    return STORE_CONFIG.PIXEL_CODES || {};
+}
+
+// =============================================================================
+// 📊 دالة تحميل جميع الإعدادات
+// =============================================================================
+
+function loadAllConfig() {
+    return STORE_CONFIG;
+}
+
+// =============================================================================
+// 🔄 دالة تحديث الإعدادات
+// =============================================================================
+
+function updateConfig(newConfig) {
+    for (const key in newConfig) {
+        if (newConfig.hasOwnProperty(key)) {
+            STORE_CONFIG[key] = newConfig[key];
+        }
+    }
+    return STORE_CONFIG;
+}
+</pre>
+<h2>store-config.json</h2>
+<h2>store-config.json</h2><pre>{
+  &quot;PRODUCTS&quot;: {
+    &quot;1789476986031&quot;: {
+      &quot;name&quot;: &quot;لباس أطفال تركي&quot;,
+      &quot;price&quot;: 300,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;category&quot;: &quot;&quot;,
+      &quot;stock&quot;: 0,
+      &quot;featured&quot;: false,
+      &quot;availableColors&quot;: [
+        &quot;أحمر&quot;,
+        &quot;أزرق&quot;
+      ],
+      &quot;availableSizes&quot;: [
+        &quot;S&quot;,
+        &quot;M&quot;
+      ],
+      &quot;ageRanges&quot;: [],
+      &quot;colorImages&quot;: {
+        &quot;أحمر&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/dawn-dz/main/images/product-1789476986031-أحمر-1789477096937-modal3.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;M&quot;
+            }
+          ]
+        },
+        &quot;أزرق&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/dawn-dz/main/images/product-1789476986031-أزرق-1789477125433-modal4.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot; &quot;,
+              &quot;ageTo&quot;: &quot; &quot;,
+              &quot;size&quot;: &quot;M&quot;
+            }
+          ]
+        }
+      },
+      &quot;sizeGuide&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;guide&quot;: {}
+      },
+      &quot;createdAt&quot;: &quot;2026-09-15T12:56:26.031Z&quot;,
+      &quot;image&quot;: &quot;https://raw.githubusercontent.com/one-wil/dawn-dz/main/images/product-1789476986031-1789477052559-modal3.jpg&quot;,
+      &quot;updatedAt&quot;: &quot;2026-09-15T12:58:09.766Z&quot;
+    },
+    &quot;1789581423689&quot;: {
+      &quot;name&quot;: &quot; Ensemble polo&quot;,
+      &quot;price&quot;: 4000,
+      &quot;description&quot;: &quot; منتج عال الجودة ، بتفاصيل جدابة&quot;,
+      &quot;category&quot;: &quot;&quot;,
+      &quot;stock&quot;: 0,
+      &quot;featured&quot;: false,
+      &quot;availableColors&quot;: [
+        &quot;Black-olive Geen&quot;,
+        &quot;Beige - Black&quot;,
+        &quot;Gray-black&quot;
+      ],
+      &quot;availableSizes&quot;: [
+        &quot;S&quot;,
+        &quot;M&quot;,
+        &quot;L&quot;
+      ],
+      &quot;ageRanges&quot;: [],
+      &quot;colorImages&quot;: {
+        &quot;Black-olive Geen&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-Black-olive%20Geen-1789581763856-Messenger-creation-BFECA40B-57E0-4596-BD25-4F9D45BA3562.jpeg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;L&quot;
+            }
+          ]
+        },
+        &quot;Beige - Black&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-Beige%20-%20Black-1789581940027-Messenger-creation-810CA979-D104-4003-AC53-8D1BA722871C.jpeg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;L&quot;
+            }
+          ]
+        },
+        &quot;Gray-black&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-Gray-black-1789581994305-Messenger-creation-25516B0A-A522-42F1-9AB6-57299C553605.jpeg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;&quot;,
+              &quot;ageTo&quot;: &quot;&quot;,
+              &quot;size&quot;: &quot;L&quot;
+            }
+          ]
+        }
+      },
+      &quot;sizeGuide&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;guide&quot;: {
+          &quot;S&quot;: {
+            &quot;heightFrom&quot;: 0,
+            &quot;heightTo&quot;: 0,
+            &quot;weightFrom&quot;: 0,
+            &quot;weightTo&quot;: 0
+          },
+          &quot;M&quot;: {
+            &quot;heightFrom&quot;: 0,
+            &quot;heightTo&quot;: 0,
+            &quot;weightFrom&quot;: 0,
+            &quot;weightTo&quot;: 0
+          },
+          &quot;L&quot;: {
+            &quot;heightFrom&quot;: 0,
+            &quot;heightTo&quot;: 0,
+            &quot;weightFrom&quot;: 0,
+            &quot;weightTo&quot;: 0
+          }
+        }
+      },
+      &quot;createdAt&quot;: &quot;2026-09-16T17:57:03.689Z&quot;,
+      &quot;image&quot;: &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789581423689-1789581668031-Messenger-creation-810CA979-D104-4003-AC53-8D1BA722871C.jpeg&quot;,
+      &quot;updatedAt&quot;: &quot;2026-09-16T18:08:38.128Z&quot;
+    },
+    &quot;1789652772129&quot;: {
+      &quot;name&quot;: &quot;فستان بنات&quot;,
+      &quot;price&quot;: 50000,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;category&quot;: &quot;&quot;,
+      &quot;stock&quot;: 0,
+      &quot;featured&quot;: false,
+      &quot;availableColors&quot;: [
+        &quot;أبيض&quot;,
+        &quot;أسود&quot;
+      ],
+      &quot;availableSizes&quot;: [
+        &quot;S&quot;,
+        &quot;M&quot;
+      ],
+      &quot;ageRanges&quot;: [],
+      &quot;colorImages&quot;: {
+        &quot;أبيض&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789652772129-أبيض-1789653498662-1000028225.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: [
+            {
+              &quot;ageFrom&quot;: &quot;13&quot;,
+              &quot;ageTo&quot;: &quot;2&quot;,
+              &quot;size&quot;: &quot;S&quot;
+            },
+            {
+              &quot;ageFrom&quot;: &quot;13&quot;,
+              &quot;ageTo&quot;: &quot;ب5&quot;,
+              &quot;size&quot;: &quot;M&quot;
+            }
+          ]
+        },
+        &quot;أسود&quot;: {
+          &quot;images&quot;: [
+            &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789652772129-أسود-1789653582687-1000028231.jpg&quot;
+          ],
+          &quot;ageRanges&quot;: []
+        }
+      },
+      &quot;sizeGuide&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;guide&quot;: {}
+      },
+      &quot;createdAt&quot;: &quot;2026-09-17T13:46:12.129Z&quot;,
+      &quot;image&quot;: &quot;https://raw.githubusercontent.com/one-wil/vol-shop/main/images/product-1789652772129-1789652819808-1000028231.jpg&quot;,
+      &quot;updatedAt&quot;: &quot;2026-09-17T13:59:57.655Z&quot;
+    }
+  },
+  &quot;PRODUCT_ORDER&quot;: {
+    &quot;1789476986031&quot;: 2,
+    &quot;1789581423689&quot;: 1,
+    &quot;1789652772129&quot;: 3
+  },
+  &quot;DELIVERY_PRICES&quot;: {
+    &quot;01 - أدرار&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;02 - الشلف&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;03 - الأغواط&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 600
+    },
+    &quot;04 - أم البواقي&quot;: {
+      &quot;home&quot;: 650,
+      &quot;desk&quot;: 400
+    },
+    &quot;05 - باتنة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;06 - بجاية&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;07 - بسكرة&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;08 - بشار&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;09 - البليدة&quot;: {
+      &quot;home&quot;: 500,
+      &quot;desk&quot;: 250
+    },
+    &quot;10 - البويرة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;11 - تمنراست&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 800
+    },
+    &quot;12 - تبسة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;13 - تلمسان&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;14 - تيارت&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;15 - تيزي وزو&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;16 - الجزائر&quot;: {
+      &quot;home&quot;: 500,
+      &quot;desk&quot;: 250
+    },
+    &quot;17 - الجلفة&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;18 - جيجل&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;19 - سطيف&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;20 - سعيدة&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;21 - سكيكدة&quot;: {
+      &quot;home&quot;: 600,
+      &quot;desk&quot;: 400
+    },
+    &quot;22 - سيدي بلعباس&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;23 - عنابة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;24 - قالمة&quot;: {
+      &quot;home&quot;: 600,
+      &quot;desk&quot;: 400
+    },
+    &quot;25 - قسنطينة&quot;: {
+      &quot;home&quot;: 600,
+      &quot;desk&quot;: 400
+    },
+    &quot;26 - المدية&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;27 - مستغانم&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;28 - المسيلة&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;29 - معسكر&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;30 - ورقلة&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;31 - وهران&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;32 - البيض&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 500
+    },
+    &quot;33 - إليزي&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 600
+    },
+    &quot;34 - برج بوعريريج&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;35 - بومرداس&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;36 - الطارف&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;37 - تندوف&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 600
+    },
+    &quot;38 - تيسمسيلت&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;39 - الوادي&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;40 - خنشلة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 500
+    },
+    &quot;41 - سوق أهراس&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;42 - تيبازة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;43 - ميلة&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 450
+    },
+    &quot;44 - عين الدفلى&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;45 - النعامة&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 500
+    },
+    &quot;46 - عين تموشنت&quot;: {
+      &quot;home&quot;: 800,
+      &quot;desk&quot;: 400
+    },
+    &quot;47 - غرداية&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;48 - غليزان&quot;: {
+      &quot;home&quot;: 700,
+      &quot;desk&quot;: 400
+    },
+    &quot;49 - تيميمون&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;50 - برج باجي مختار&quot;: {
+      &quot;home&quot;: 1200,
+      &quot;desk&quot;: 650
+    },
+    &quot;51 - أولاد جلال&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 500
+    },
+    &quot;52 - بني عباس&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 600
+    },
+    &quot;53 - عين صالح&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 700
+    },
+    &quot;54 - عين قزام&quot;: {
+      &quot;home&quot;: 1300,
+      &quot;desk&quot;: 700
+    },
+    &quot;55 - توقرت&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 550
+    },
+    &quot;56 - جانت&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 500
+    },
+    &quot;57 - المغير&quot;: {
+      &quot;home&quot;: 900,
+      &quot;desk&quot;: 550
+    },
+    &quot;58 - المنيعة&quot;: {
+      &quot;home&quot;: 1100,
+      &quot;desk&quot;: 400
+    }
+  },
+  &quot;COMMUNES_SOURCE&quot;: &quot;https://raw.githubusercontent.com/DZBuild-com/dzship/main/data/communes.json&quot;,
+  &quot;FREE_DELIVERY&quot;: {
+    &quot;desk&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;minAmount&quot;: 0,
+      &quot;wilayas&quot;: [],
+      &quot;minQuantity&quot;: 1
+    },
+    &quot;home&quot;: {
+      &quot;enabled&quot;: false,
+      &quot;minAmount&quot;: 0,
+      &quot;wilayas&quot;: [],
+      &quot;minQuantity&quot;: 3
+    },
+    &quot;freeDeliveryProducts&quot;: [
+      1765137505304,
+      1765145035052,
+      1765145814607,
+      1789476986031,
+      1789581423689
+    ]
+  },
+  &quot;DISCOUNTS&quot;: {
+    &quot;enableQuantityDiscount&quot;: false,
+    &quot;minQuantityForDiscount&quot;: 0,
+    &quot;discountPerItem&quot;: 0,
+    &quot;discountScope&quot;: &quot;selected&quot;,
+    &quot;discountProducts&quot;: [],
+    &quot;enablePromotionalDiscount&quot;: false,
+    &quot;promotionalDiscountPercent&quot;: 0,
+    &quot;promotionalDiscountedPrice&quot;: null,
+    &quot;promoDiscountScope&quot;: &quot;selected&quot;,
+    &quot;promoDiscountProducts&quot;: []
+  },
+  &quot;STORE_INFO&quot;: {
+    &quot;name&quot;: &quot;Vol-Shop1&quot;,
+    &quot;storeIcon&quot;: &quot;-&quot;,
+    &quot;storeTitle&quot;: &quot;-&quot;,
+    &quot;tagline&quot;: &quot;متجر الأحلام &quot;,
+    &quot;phoneNumbers&quot;: [
+      &quot;0671466489&quot;,
+      &quot;0551102155&quot;
+    ],
+    &quot;logo&quot;: &quot;https://raw.githubusercontent.com/one-wil/lip-waw/main/images/store-logo-1789242847980-file-0000000012a481f4b3f05ecbb28e82cd.png&quot;,
+    &quot;facebookUrl&quot;: &quot;&quot;,
+    &quot;instagramUrl&quot;: &quot;&quot;,
+    &quot;messengerUrl&quot;: &quot;&quot;,
+    &quot;viberNumber&quot;: &quot;&quot;,
+    &quot;whatsappNumber&quot;: &quot;213671466489&quot;,
+    &quot;whatsappUrl&quot;: &quot;https://wa.me/213671466489&quot;
+  },
+  &quot;GOOGLE_SHEETS&quot;: {
+    &quot;url&quot;: &quot;&quot;,
+    &quot;description&quot;: &quot;  جدول الطلبات&quot;,
+    &quot;autoUpdate&quot;: false
+  },
+  &quot;AVAILABLE_COLORS&quot;: [
+    &quot;أبيض&quot;,
+    &quot;أسود&quot;,
+    &quot;أحمر&quot;,
+    &quot;أزرق&quot;,
+    &quot;أخضر&quot;,
+    &quot;وردي&quot;,
+    &quot;رمادي&quot;,
+    &quot;أصفر&quot;,
+    &quot;vert motard&quot;,
+    &quot;Vert pistache&quot;,
+    &quot;Beige clair&quot;,
+    &quot;Marron&quot;,
+    &quot;Marron clair&quot;,
+    &quot;Vert  Kaki&quot;,
+    &quot;Olive Green-black&quot;,
+    &quot;Black-olive Geen&quot;,
+    &quot;Beige - Black&quot;,
+    &quot;Gray-black&quot;
+  ],
+  &quot;AVAILABLE_SIZES&quot;: [
+    &quot;S&quot;,
+    &quot;M&quot;,
+    &quot;L&quot;,
+    &quot;XL&quot;,
+    &quot;XXL&quot;,
+    &quot;XXXL&quot;,
+    &quot;38&quot;,
+    &quot;39&quot;,
+    &quot;40&quot;,
+    &quot;41&quot;,
+    &quot;42&quot;,
+    &quot;43&quot;,
+    &quot;44&quot;,
+    &quot;45&quot;,
+    &quot;45&quot;,
+    &quot;46&quot;,
+    &quot;47&quot;,
+    &quot;48&quot;,
+    &quot;49&quot;,
+    &quot;50&quot;,
+    &quot;38-40&quot;,
+    &quot;42-44&quot;,
+    &quot;46-48&quot;
+  ],
+  &quot;SIZE_GUIDE&quot;: {
+    &quot;38&quot;: {
+      &quot;heightFrom&quot;: 150,
+      &quot;heightTo&quot;: 160,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 70,
+      &quot;enabled&quot;: false
+    },
+    &quot;39&quot;: {
+      &quot;heightFrom&quot;: 152,
+      &quot;heightTo&quot;: 162,
+      &quot;weightFrom&quot;: 53,
+      &quot;weightTo&quot;: 74,
+      &quot;enabled&quot;: false
+    },
+    &quot;40&quot;: {
+      &quot;heightFrom&quot;: 154,
+      &quot;heightTo&quot;: 164,
+      &quot;weightFrom&quot;: 56,
+      &quot;weightTo&quot;: 78,
+      &quot;enabled&quot;: false
+    },
+    &quot;41&quot;: {
+      &quot;heightFrom&quot;: 156,
+      &quot;heightTo&quot;: 166,
+      &quot;weightFrom&quot;: 59,
+      &quot;weightTo&quot;: 82,
+      &quot;enabled&quot;: false
+    },
+    &quot;42&quot;: {
+      &quot;heightFrom&quot;: 158,
+      &quot;heightTo&quot;: 168,
+      &quot;weightFrom&quot;: 62,
+      &quot;weightTo&quot;: 86,
+      &quot;enabled&quot;: false
+    },
+    &quot;43&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 170,
+      &quot;weightFrom&quot;: 65,
+      &quot;weightTo&quot;: 90,
+      &quot;enabled&quot;: false
+    },
+    &quot;44&quot;: {
+      &quot;heightFrom&quot;: 162,
+      &quot;heightTo&quot;: 172,
+      &quot;weightFrom&quot;: 68,
+      &quot;weightTo&quot;: 94,
+      &quot;enabled&quot;: false
+    },
+    &quot;45&quot;: {
+      &quot;heightFrom&quot;: 164,
+      &quot;heightTo&quot;: 174,
+      &quot;weightFrom&quot;: 71,
+      &quot;weightTo&quot;: 98,
+      &quot;enabled&quot;: false
+    },
+    &quot;46&quot;: {
+      &quot;heightFrom&quot;: 166,
+      &quot;heightTo&quot;: 176,
+      &quot;weightFrom&quot;: 74,
+      &quot;weightTo&quot;: 102,
+      &quot;enabled&quot;: false
+    },
+    &quot;47&quot;: {
+      &quot;heightFrom&quot;: 168,
+      &quot;heightTo&quot;: 178,
+      &quot;weightFrom&quot;: 77,
+      &quot;weightTo&quot;: 106,
+      &quot;enabled&quot;: false
+    },
+    &quot;48&quot;: {
+      &quot;heightFrom&quot;: 170,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 80,
+      &quot;weightTo&quot;: 110,
+      &quot;enabled&quot;: false
+    },
+    &quot;49&quot;: {
+      &quot;heightFrom&quot;: 172,
+      &quot;heightTo&quot;: 182,
+      &quot;weightFrom&quot;: 83,
+      &quot;weightTo&quot;: 114,
+      &quot;enabled&quot;: false
+    },
+    &quot;S&quot;: {
+      &quot;heightFrom&quot;: 120,
+      &quot;heightTo&quot;: 130,
+      &quot;weightFrom&quot;: 14,
+      &quot;weightTo&quot;: 16,
+      &quot;enabled&quot;: false
+    },
+    &quot;M&quot;: {
+      &quot;heightFrom&quot;: 130,
+      &quot;heightTo&quot;: 150,
+      &quot;weightFrom&quot;: 16,
+      &quot;weightTo&quot;: 22,
+      &quot;enabled&quot;: false
+    },
+    &quot;L&quot;: {
+      &quot;heightFrom&quot;: 180,
+      &quot;heightTo&quot;: 195,
+      &quot;weightFrom&quot;: 70,
+      &quot;weightTo&quot;: 90,
+      &quot;enabled&quot;: false
+    },
+    &quot;XL&quot;: {
+      &quot;heightFrom&quot;: 185,
+      &quot;heightTo&quot;: 200,
+      &quot;weightFrom&quot;: 85,
+      &quot;weightTo&quot;: 110,
+      &quot;enabled&quot;: false
+    },
+    &quot;XXL&quot;: {
+      &quot;heightFrom&quot;: 190,
+      &quot;heightTo&quot;: 205,
+      &quot;weightFrom&quot;: 95,
+      &quot;weightTo&quot;: 120,
+      &quot;enabled&quot;: false
+    },
+    &quot;S1&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;S2&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;S3&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;M1&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;M2&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;M3&quot;: {
+      &quot;heightFrom&quot;: 160,
+      &quot;heightTo&quot;: 180,
+      &quot;weightFrom&quot;: 50,
+      &quot;weightTo&quot;: 80,
+      &quot;enabled&quot;: false
+    },
+    &quot;XXXL&quot;: {
+      &quot;heightFrom&quot;: 195,
+      &quot;heightTo&quot;: 210,
+      &quot;weightFrom&quot;: 105,
+      &quot;weightTo&quot;: 140,
+      &quot;enabled&quot;: false
+    }
+  },
+  &quot;PIXEL_CODES&quot;: {
+    &quot;facebook&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;pixelId&quot;: &quot;&quot;,
+      &quot;events&quot;: {
+        &quot;pageView&quot;: true,
+        &quot;addToCart&quot;: true,
+        &quot;purchase&quot;: true,
+        &quot;initiateCheckout&quot;: true,
+        &quot;viewContent&quot;: true
+      }
+    },
+    &quot;tiktok&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;pixelId&quot;: &quot;&quot;,
+      &quot;events&quot;: {
+        &quot;pageView&quot;: true,
+        &quot;addToCart&quot;: true,
+        &quot;purchase&quot;: true,
+        &quot;initiateCheckout&quot;: true,
+        &quot;viewContent&quot;: true
+      }
+    }
+  },
+  &quot;POINTS_SYSTEM&quot;: {
+    &quot;currentPoints&quot;: 1000,
+    &quot;remainingDays&quot;: 30,
+    &quot;lastReset&quot;: &quot;2026-08-22T20:58:39.826Z&quot;,
+    &quot;planType&quot;: &quot;gratuit&quot;,
+    &quot;monthlyPoints&quot;: 1000,
+    &quot;resetPeriod&quot;: 30,
+    &quot;currentMonthDays&quot;: 30,
+    &quot;lastUpdate&quot;: &quot;2025-12-13T18:59:22.674Z&quot;,
+    &quot;pointsHistory&quot;: [
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:05:36.186Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:06:34.383Z&quot;,
+        &quot;action&quot;: &quot;UPLOAD_IMAGE&quot;,
+        &quot;pointsBefore&quot;: 482,
+        &quot;pointsAfter&quot;: 481,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:09:33.670Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:16:51.121Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T12:29:49.030Z&quot;,
+        &quot;action&quot;: &quot;FULL_SYNC&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:37:02.011Z&quot;,
+        &quot;action&quot;: &quot;FULL_SYNC&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 482,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:37:46.228Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 482,
+        &quot;pointsAfter&quot;: 480,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:41:17.205Z&quot;,
+        &quot;action&quot;: &quot;UPLOAD_IMAGE&quot;,
+        &quot;pointsBefore&quot;: 484,
+        &quot;pointsAfter&quot;: 483,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:41:27.220Z&quot;,
+        &quot;action&quot;: &quot;FULL_SYNC&quot;,
+        &quot;pointsBefore&quot;: 483,
+        &quot;pointsAfter&quot;: 481,
+        &quot;user&quot;: &quot;admin&quot;
+      },
+      {
+        &quot;date&quot;: &quot;2025-12-13T14:46:48.645Z&quot;,
+        &quot;action&quot;: &quot;SYNC_DATA&quot;,
+        &quot;pointsBefore&quot;: 481,
+        &quot;pointsAfter&quot;: 479,
+        &quot;user&quot;: &quot;admin&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2026-08-22T22:32:22.940Z&quot;
+  },
+  &quot;FREE_DELIVERY_PRODUCTS&quot;: [
+    1765456782838
+  ],
+  &quot;config&quot;: {
+    &quot;PRODUCTS&quot;: {},
+    &quot;DELIVERY_PRICES&quot;: {
+      &quot;01 - أدرار&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;02 - الشلف&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;03 - الأغواط&quot;: {
+        &quot;home&quot;: 1000,
+        &quot;desk&quot;: 600
+      },
+      &quot;04 - أم البواقي&quot;: {
+        &quot;home&quot;: 650,
+        &quot;desk&quot;: 400
+      },
+      &quot;05 - باتنة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;06 - بجاية&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;07 - بسكرة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;08 - بشار&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;09 - البليدة&quot;: {
+        &quot;home&quot;: 500,
+        &quot;desk&quot;: 250
+      },
+      &quot;10 - البويرة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;11 - تمنراست&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 800
+      },
+      &quot;12 - تبسة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;13 - تلمسان&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;14 - تيارت&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;15 - تيزي وزو&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;16 - الجزائر&quot;: {
+        &quot;home&quot;: 500,
+        &quot;desk&quot;: 250
+      },
+      &quot;17 - الجلفة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;18 - جيجل&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;19 - سطيف&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;20 - سعيدة&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;21 - سكيكدة&quot;: {
+        &quot;home&quot;: 600,
+        &quot;desk&quot;: 400
+      },
+      &quot;22 - سيدي بلعباس&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;23 - عنابة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;24 - قالمة&quot;: {
+        &quot;home&quot;: 600,
+        &quot;desk&quot;: 400
+      },
+      &quot;25 - قسنطينة&quot;: {
+        &quot;home&quot;: 600,
+        &quot;desk&quot;: 400
+      },
+      &quot;26 - المدية&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;27 - مستغانم&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;28 - المسيلة&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;29 - معسكر&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;30 - ورقلة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;31 - وهران&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;32 - البيض&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 500
+      },
+      &quot;33 - إليزي&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 600
+      },
+      &quot;34 - برج بوعريريج&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;35 - بومرداس&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;36 - الطارف&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;37 - تندوف&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 600
+      },
+      &quot;38 - تيسمسيلت&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;39 - الوادي&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;40 - خنشلة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 500
+      },
+      &quot;41 - سوق أهراس&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;42 - تيبازة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;43 - ميلة&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 450
+      },
+      &quot;44 - عين الدفلى&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;45 - النعامة&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 500
+      },
+      &quot;46 - عين تموشنت&quot;: {
+        &quot;home&quot;: 800,
+        &quot;desk&quot;: 400
+      },
+      &quot;47 - غرداية&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;48 - غليزان&quot;: {
+        &quot;home&quot;: 700,
+        &quot;desk&quot;: 400
+      },
+      &quot;49 - تيميمون&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;50 - برج باجي مختار&quot;: {
+        &quot;home&quot;: 1200,
+        &quot;desk&quot;: 650
+      },
+      &quot;51 - أولاد جلال&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 500
+      },
+      &quot;52 - بني عباس&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 600
+      },
+      &quot;53 - عين صالح&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 700
+      },
+      &quot;54 - عين قزام&quot;: {
+        &quot;home&quot;: 1300,
+        &quot;desk&quot;: 700
+      },
+      &quot;55 - توقرت&quot;: {
+        &quot;home&quot;: 950,
+        &quot;desk&quot;: 550
+      },
+      &quot;56 - جانت&quot;: {
+        &quot;home&quot;: 1100,
+        &quot;desk&quot;: 500
+      },
+      &quot;57 - المغير&quot;: {
+        &quot;home&quot;: 950,
+        &quot;desk&quot;: 550
+      },
+      &quot;58 - المنيعة&quot;: {
+        &quot;home&quot;: 900,
+        &quot;desk&quot;: 400
+      }
+    },
+    &quot;FREE_DELIVERY&quot;: {
+      &quot;desk&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;minQuantity&quot;: null,
+        &quot;wilayas&quot;: []
+      },
+      &quot;home&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;minQuantity&quot;: null,
+        &quot;wilayas&quot;: []
+      },
+      &quot;freeDeliveryProducts&quot;: []
+    },
+    &quot;DISCOUNTS&quot;: {
+      &quot;enableQuantityDiscount&quot;: false,
+      &quot;minQuantityForDiscount&quot;: 2,
+      &quot;discountPerItem&quot;: 300,
+      &quot;discountScope&quot;: &quot;all&quot;,
+      &quot;discountProducts&quot;: [],
+      &quot;enablePromotionalDiscount&quot;: false,
+      &quot;promotionalDiscountPercent&quot;: 20,
+      &quot;promotionalDiscountedPrice&quot;: 0,
+      &quot;promoDiscountScope&quot;: &quot;all&quot;,
+      &quot;promoDiscountProducts&quot;: []
+    },
+    &quot;STORE_INFO&quot;: {
+      &quot;name&quot;: &quot;&quot;,
+      &quot;storeIcon&quot;: &quot;&quot;,
+      &quot;storeTitle&quot;: &quot; أحدث موديلات &quot;,
+      &quot;tagline&quot;: &quot;متجر أفخم الملابس&quot;,
+      &quot;phoneNumbers&quot;: [
+        &quot;0xxxxxxxxx&quot;,
+        &quot;0xxxxxxxxx&quot;
+      ],
+      &quot;logo&quot;: &quot;&quot;,
+      &quot;facebookUrl&quot;: &quot;&quot;,
+      &quot;instagramUrl&quot;: &quot;&quot;,
+      &quot;messengerUrl&quot;: &quot;&quot;,
+      &quot;viberNumber&quot;: &quot;&quot;,
+      &quot;whatsappNumber&quot;: &quot;&quot;,
+      &quot;whatsappUrl&quot;: &quot;&quot;
+    },
+    &quot;GOOGLE_SHEETS&quot;: {
+      &quot;url&quot;: &quot;&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;autoUpdate&quot;: false
+    },
+    &quot;AVAILABLE_COLORS&quot;: [
+      &quot;أبيض&quot;,
+      &quot;أسود&quot;,
+      &quot;أحمر&quot;,
+      &quot;أزرق&quot;,
+      &quot;أخضر&quot;,
+      &quot;وردي&quot;,
+      &quot;رمادي&quot;,
+      &quot;أصفر&quot;
+    ],
+    &quot;AVAILABLE_SIZES&quot;: [
+      &quot;S&quot;,
+      &quot;S1&quot;,
+      &quot;S2&quot;,
+      &quot;S3&quot;,
+      &quot;M&quot;,
+      &quot;M1&quot;,
+      &quot;M2&quot;,
+      &quot;M3&quot;,
+      &quot;L&quot;,
+      &quot;XL&quot;,
+      &quot;XXL&quot;,
+      &quot;XXXL&quot;,
+      &quot;38&quot;,
+      &quot;39&quot;,
+      &quot;40&quot;,
+      &quot;41&quot;,
+      &quot;42&quot;,
+      &quot;43&quot;,
+      &quot;44&quot;,
+      &quot;45&quot;,
+      &quot;45&quot;,
+      &quot;46&quot;,
+      &quot;47&quot;,
+      &quot;48&quot;,
+      &quot;49&quot;,
+      &quot;50&quot;
+    ],
+    &quot;SIZE_GUIDE&quot;: {
+      &quot;38&quot;: {
+        &quot;heightFrom&quot;: 150,
+        &quot;heightTo&quot;: 160,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 70,
+        &quot;enabled&quot;: false
+      },
+      &quot;39&quot;: {
+        &quot;heightFrom&quot;: 152,
+        &quot;heightTo&quot;: 162,
+        &quot;weightFrom&quot;: 53,
+        &quot;weightTo&quot;: 74,
+        &quot;enabled&quot;: false
+      },
+      &quot;40&quot;: {
+        &quot;heightFrom&quot;: 154,
+        &quot;heightTo&quot;: 164,
+        &quot;weightFrom&quot;: 56,
+        &quot;weightTo&quot;: 78,
+        &quot;enabled&quot;: false
+      },
+      &quot;41&quot;: {
+        &quot;heightFrom&quot;: 156,
+        &quot;heightTo&quot;: 166,
+        &quot;weightFrom&quot;: 59,
+        &quot;weightTo&quot;: 82,
+        &quot;enabled&quot;: false
+      },
+      &quot;42&quot;: {
+        &quot;heightFrom&quot;: 158,
+        &quot;heightTo&quot;: 168,
+        &quot;weightFrom&quot;: 62,
+        &quot;weightTo&quot;: 86,
+        &quot;enabled&quot;: false
+      },
+      &quot;43&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 170,
+        &quot;weightFrom&quot;: 65,
+        &quot;weightTo&quot;: 90,
+        &quot;enabled&quot;: false
+      },
+      &quot;44&quot;: {
+        &quot;heightFrom&quot;: 162,
+        &quot;heightTo&quot;: 172,
+        &quot;weightFrom&quot;: 68,
+        &quot;weightTo&quot;: 94,
+        &quot;enabled&quot;: false
+      },
+      &quot;45&quot;: {
+        &quot;heightFrom&quot;: 164,
+        &quot;heightTo&quot;: 174,
+        &quot;weightFrom&quot;: 71,
+        &quot;weightTo&quot;: 98,
+        &quot;enabled&quot;: false
+      },
+      &quot;46&quot;: {
+        &quot;heightFrom&quot;: 166,
+        &quot;heightTo&quot;: 176,
+        &quot;weightFrom&quot;: 74,
+        &quot;weightTo&quot;: 102,
+        &quot;enabled&quot;: false
+      },
+      &quot;47&quot;: {
+        &quot;heightFrom&quot;: 168,
+        &quot;heightTo&quot;: 178,
+        &quot;weightFrom&quot;: 77,
+        &quot;weightTo&quot;: 106,
+        &quot;enabled&quot;: false
+      },
+      &quot;48&quot;: {
+        &quot;heightFrom&quot;: 170,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 80,
+        &quot;weightTo&quot;: 110,
+        &quot;enabled&quot;: false
+      },
+      &quot;49&quot;: {
+        &quot;heightFrom&quot;: 172,
+        &quot;heightTo&quot;: 182,
+        &quot;weightFrom&quot;: 83,
+        &quot;weightTo&quot;: 114,
+        &quot;enabled&quot;: false
+      },
+      &quot;S&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 175,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 65,
+        &quot;enabled&quot;: false
+      },
+      &quot;M&quot;: {
+        &quot;heightFrom&quot;: 170,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 65,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: true
+      },
+      &quot;L&quot;: {
+        &quot;heightFrom&quot;: 180,
+        &quot;heightTo&quot;: 195,
+        &quot;weightFrom&quot;: 70,
+        &quot;weightTo&quot;: 90,
+        &quot;enabled&quot;: true
+      },
+      &quot;XL&quot;: {
+        &quot;heightFrom&quot;: 185,
+        &quot;heightTo&quot;: 200,
+        &quot;weightFrom&quot;: 85,
+        &quot;weightTo&quot;: 110,
+        &quot;enabled&quot;: true
+      },
+      &quot;XXL&quot;: {
+        &quot;heightFrom&quot;: 190,
+        &quot;heightTo&quot;: 205,
+        &quot;weightFrom&quot;: 95,
+        &quot;weightTo&quot;: 120,
+        &quot;enabled&quot;: true
+      },
+      &quot;S1&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;S2&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;S3&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;M1&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;M2&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;M3&quot;: {
+        &quot;heightFrom&quot;: 160,
+        &quot;heightTo&quot;: 180,
+        &quot;weightFrom&quot;: 50,
+        &quot;weightTo&quot;: 80,
+        &quot;enabled&quot;: false
+      },
+      &quot;XXXL&quot;: {
+        &quot;heightFrom&quot;: 195,
+        &quot;heightTo&quot;: 210,
+        &quot;weightFrom&quot;: 105,
+        &quot;weightTo&quot;: 140,
+        &quot;enabled&quot;: false
+      }
+    }
+  },
+  &quot;storageKeys&quot;: {},
+  &quot;timestamp&quot;: &quot;2025-12-07T10:15:31.349Z&quot;,
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;LANDING_PAGES&quot;: {
+    &quot;templates&quot;: [
+      {
+        &quot;id&quot;: &quot;template1&quot;,
+        &quot;name&quot;: &quot;قالب بسيط&quot;,
+        &quot;description&quot;: &quot;صفحة هبوط بسيطة وعصرية&quot;,
+        &quot;features&quot;: [
+          &quot;صورة كبيرة&quot;,
+          &quot;وصف مختصر&quot;,
+          &quot;زر شراء واضح&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;template2&quot;,
+        &quot;name&quot;: &quot;قالب متميز&quot;,
+        &quot;description&quot;: &quot;صفحة هبوط متكاملة مع مميزات&quot;,
+        &quot;features&quot;: [
+          &quot;معرض صور&quot;,
+          &quot;معلومات مفصلة&quot;,
+          &quot;أسئلة شائعة&quot;,
+          &quot;تعليقات العملاء&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;template3&quot;,
+        &quot;name&quot;: &quot;قالب ترويجي&quot;,
+        &quot;description&quot;: &quot;صفحة هبوط مخصصة للعروض&quot;,
+        &quot;features&quot;: [
+          &quot;عداد تنازلي&quot;,
+          &quot;عرض خاص&quot;,
+          &quot;شهادة جودة&quot;,
+          &quot;ضمان رضا&quot;
+        ]
+      }
+    ],
+    &quot;pages&quot;: {
+      &quot;1766870645677&quot;: {
+        &quot;productId&quot;: 1766870645677,
+        &quot;enabled&quot;: true,
+        &quot;title&quot;: &quot;بدلة رياضية&quot;,
+        &quot;subtitle&quot;: &quot;أفضل عرض لهذا المنتج&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;template&quot;: &quot;template1&quot;,
+        &quot;features&quot;: [
+          &quot;جودة عالية&quot;,
+          &quot;توصيل سريع&quot;,
+          &quot;ضمان الجودة&quot;,
+          &quot;دعم فني&quot;
+        ],
+        &quot;testimonials&quot;: [],
+        &quot;faq&quot;: [],
+        &quot;createdAt&quot;: &quot;2026-01-16T20:12:16.244Z&quot;,
+        &quot;updatedAt&quot;: &quot;2026-01-16T20:12:16.244Z&quot;
+      }
+    },
+    &quot;analytics&quot;: {
+      &quot;1766870645677&quot;: {
+        &quot;views&quot;: 0,
+        &quot;clicks&quot;: 0,
+        &quot;conversions&quot;: 0,
+        &quot;averageTime&quot;: 0,
+        &quot;lastVisit&quot;: null,
+        &quot;dailyStats&quot;: {},
+        &quot;sourceStats&quot;: {}
+      }
+    },
+    &quot;settings&quot;: {
+      &quot;autoGenerate&quot;: true,
+      &quot;defaultTemplate&quot;: &quot;template1&quot;,
+      &quot;trackClicks&quot;: true,
+      &quot;trackTime&quot;: true,
+      &quot;conversionGoal&quot;: &quot;purchase&quot;
+    }
+  },
+  &quot;PRODUCT_CATEGORIES&quot;: [
+    &quot;ملابس أطفال&quot;,
+    &quot;ملابس رجالية&quot;,
+    &quot;ملابس نسائية&quot;,
+    &quot;أحذية&quot;,
+    &quot;عطور رجالية&quot;,
+    &quot;عطور نسائية&quot;,
+    &quot;قبعات&quot;,
+    &quot;ساعات رجالية&quot;,
+    &quot;ساعات نسائية&quot;
+  ],
+  &quot;HAT_TYPES&quot;: [
+    &quot;بيسبول&quot;,
+    &quot;بريه&quot;,
+    &quot;قبعة شمس&quot;,
+    &quot;قبعة صوف&quot;,
+    &quot;بكيني&quot;,
+    &quot;قبعة رياضية&quot;,
+    &quot;قبعة كلاسيكية&quot;
+  ],
+  &quot;WATCH_TYPES&quot;: [
+    &quot;ساعة يد&quot;,
+    &quot;ساعة حائط&quot;,
+    &quot;ساعة ذكية&quot;,
+    &quot;ساعة كوارتز&quot;,
+    &quot;ساعة ميكانيكية&quot;,
+    &quot;ساعة فاخرة&quot;
+  ],
+  &quot;PERFUME_TYPES&quot;: [
+    &quot;عطر&quot;,
+    &quot;ماء تواليت&quot;,
+    &quot;ماء عطر&quot;,
+    &quot;كريم عطري&quot;,
+    &quot;سبراي جسم&quot;
+  ],
+  &quot;PERFUME_NOTES&quot;: [
+    &quot;حمضيات&quot;,
+    &quot;زهور&quot;,
+    &quot;خشب&quot;,
+    &quot;أعشاب&quot;,
+    &quot;توابل&quot;,
+    &quot;فواكه&quot;,
+    &quot;مسك&quot;,
+    &quot;عنبر&quot;
+  ],
+  &quot;ORDERS&quot;: [],
+  &quot;LICENSE_SERVER&quot;: &quot;https://storemaster-worker.vivavoir150.workers.dev&quot;
+}
+</pre>
+</body></html>
