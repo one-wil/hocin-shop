@@ -1,4 +1,3 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>config.js</title><style>body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#111}header{padding:16px;background:#111827;color:white;font-weight:700}pre{direction:ltr;text-align:left;white-space:pre-wrap;word-break:break-word;background:white;margin:0;padding:20px;font-family:Consolas,monospace;font-size:13px;line-height:1.5}</style></head><body><header>config.js</header><pre>
 // =============================================================================
 // ⚙️ ملف الإعدادات الرئيسي للمتجر
 // =============================================================================
@@ -1543,4 +1542,3 @@ function updateConfig(newConfig) {
     }
     return STORE_CONFIG;
 }
-</pre></body></html>
