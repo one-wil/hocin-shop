@@ -1,7 +1,3 @@
-<!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>config.js و store-config.json</title></head><body>
-<h2>config.js</h2>
-<h2>config.js</h2><pre>
 // =============================================================================
 // ⚙️ ملف الإعدادات الرئيسي للمتجر
 // =============================================================================
@@ -3010,5 +3006,5 @@ function updateConfig(newConfig) {
   &quot;ORDERS&quot;: [],
   &quot;LICENSE_SERVER&quot;: &quot;https://storemaster-worker.vivavoir150.workers.dev&quot;
 }
-</pre>
-</body></html>
+
+
