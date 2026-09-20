@@ -2351,6 +2351,7 @@
 .order-detail-section{margin-bottom:14px;padding:12px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.035)}
 .order-detail-section-title{font-weight:800;font-size:14px;margin-bottom:10px;display:flex;align-items:center;gap:7px;color:#fff}
 .order-copy-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.order-copy-field.wide{grid-column:1/-1}
 .order-copy-field{min-width:0;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:9px;background:rgba(255,255,255,.025)}
 .order-copy-label{font-size:10px;color:#aeb8ca;font-weight:800;margin-bottom:5px}
 .order-copy-row{display:flex;align-items:center;gap:7px;min-width:0}
@@ -2359,7 +2360,7 @@
 .order-copy-btn.copied{background:#06d6a0;border-color:#06d6a0;color:#061a14}
 .order-products-stack{display:grid;gap:10px}.order-product-card{position:relative;border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px;background:rgba(255,255,255,.025)}
 .order-product-image{width:58px;height:58px;object-fit:cover;border-radius:9px;float:left;margin-left:10px;margin-bottom:6px}.order-product-title{font-weight:900;font-size:13px;margin-bottom:8px}.order-status-wrap label{display:block;font-size:11px;color:#aeb8ca;margin-bottom:5px}.order-detail-actions-section{padding-bottom:16px}.order-secondary-action{background:rgba(255,255,255,.08)!important;color:#fff!important}
-@media(max-width:600px){.order-copy-grid{grid-template-columns:1fr}.order-details-header{padding-top:calc(10px + var(--safe-area-top,0px))}.order-detail-screen-body{padding-bottom:calc(24px + var(--safe-area-bottom,0px))}.order-copy-btn{min-width:68px;justify-content:center}}
+@media(max-width:600px){.order-copy-grid{grid-template-columns:1fr 1fr}.order-details-header{padding-top:calc(10px + var(--safe-area-top,0px))}.order-detail-screen-body{padding-bottom:calc(24px + var(--safe-area-bottom,0px))}.order-copy-btn{min-width:68px;justify-content:center}}
 </style>
 </head>
 
@@ -8207,7 +8208,7 @@ setTimeout(function(){
     const preferredFields=preferred.filter(k=>seenKeys.has(k)).map(k=>scalarFields.find(x=>x.key===k));
     const remaining=scalarFields.filter(x=>!preferred.includes(x.key));
     const allFields=[...preferredFields,...remaining];
-    const fieldsHtml=allFields.map(f=>orderField(f.label,f.value)).join('');
+    const fieldsHtml=allFields.map(f=>orderField(f.label,f.value,f.key==='itemsText'?'wide':'')).join('');
     const itemsHtml=items.map((x,i)=>{
       const price=(x.finalPrice||x.price||0)*(x.quantity||1);
       const itemFields=[
@@ -8226,33 +8227,10 @@ setTimeout(function(){
     const html=`<div class="order-detail-screen-body">
       <div class="order-detail-section"><div class="order-detail-section-title"><i class="fas fa-info-circle"></i> جميع بيانات الطلب</div><div class="order-copy-grid">${fieldsHtml||'<div class="orders-empty">لا توجد بيانات إضافية.</div>'}</div></div>
       <div class="order-detail-section"><div class="order-detail-section-title"><i class="fas fa-box-open"></i> المنتجات وتفاصيلها</div><div class="order-products-stack">${itemsHtml}</div></div>
-      <div class="order-detail-section order-detail-actions-section"><div class="order-detail-section-title"><i class="fas fa-sliders-h"></i> إدارة الطلب</div><div class="order-status-wrap"><label for="orderDetailStatus">الحالة</label><select id="orderDetailStatus" class="order-status-select">${statusOptions}</select></div><button class="btn btn-info" style="margin-top:8px;width:100%" onclick="updateOrderStatus('${orderId}')"><i class="fas fa-save"></i> حفظ الحالة</button><button class="btn order-print-btn" style="margin-top:8px;width:100%" onclick="printOrderLabel('${orderId}')"><i class="fas fa-print"></i> فتح صفحة الطباعة</button>${hiddenAction}</div>
+      <div class="order-detail-section order-detail-actions-section"><div class="order-detail-section-title"><i class="fas fa-sliders-h"></i> إدارة الطلب</div><div class="order-status-wrap"><label for="orderDetailStatus">الحالة</label><select id="orderDetailStatus" class="order-status-select">${statusOptions}</select></div><button class="btn btn-info" style="margin-top:8px;width:100%" onclick="updateOrderStatus('${orderId}')"><i class="fas fa-save"></i> حفظ الحالة</button><button class="btn order-secondary-action" style="margin-top:8px;width:100%" onclick="document.getElementById('orderDetailsModal')?.remove()"><i class="fas fa-times"></i> خروج</button>${hiddenAction}</div>
     </div>`;
     showOrderModal(html);
   }
-
-  window.printOrderLabel=function(orderId){
-    const o=ordersCache.find(x=>String(x.orderId||x.id)===String(orderId));
-    if(!o){showNotification?.('تعذر العثور على الطلب للطباعة','error');return}
-    const items=normalizeItems(o.items);
-    const scalarFields=orderPrintableScalarFields(o);
-    const infoRows=scalarFields.map(f=>`<div class="box"><b>${escOrder(f.label)}</b><span>${escOrder(f.value||'—')}</span></div>`).join('');
-    const itemRows=items.map(x=>`<tr><td>${escOrder(x.name||'Produit')}</td><td>${escOrder(x.size||'—')}</td><td>${escOrder(x.color||'—')}</td><td>${escOrder(x.quantity||1)}</td><td>${formatMoney((x.finalPrice||x.price||0)*(x.quantity||1))}</td></tr>`).join('');
-    const w=window.open('','_blank','width=820,height=900');
-    if(!w){showNotification?.('يرجى السماح بالنوافذ المنبثقة للطباعة.','warning');return}
-    w.document.open();
-    w.document.write(`<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>طلب ${escOrder(o.orderId||o.id)}</title><style>
-      *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,"Tahoma",sans-serif;color:#111;background:#eef2f7}.page{width:min(900px,100%);margin:0 auto;background:#fff;min-height:100vh;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:2px solid #111;padding-bottom:14px}.top h1{font-size:23px;margin:0 0 4px}.muted{color:#666;font-size:12px}.close{border:0;background:#111;color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.box{border:1px solid #ddd;border-radius:8px;padding:9px;min-width:0}.box b{display:block;font-size:11px;color:#666;margin-bottom:4px}.box span{display:block;word-break:break-word;font-size:13px}.wide{grid-column:1/-1}h2{font-size:16px;margin:20px 0 8px;border-bottom:2px solid #111;padding-bottom:6px}table{width:100%;border-collapse:collapse;font-size:12px}th,td{border:1px solid #ddd;padding:8px;text-align:right;word-break:break-word}th{background:#f2f2f2}.total{margin-top:15px;border-top:2px solid #111;padding-top:12px;font-size:19px;font-weight:800}.print-actions{display:flex;justify-content:center;gap:10px;margin-top:20px}.print-btn{padding:11px 22px;border:0;border-radius:8px;background:#111;color:#fff;font-weight:700;cursor:pointer}.print-note{margin-top:18px;text-align:center;font-size:11px;color:#777}@media(max-width:600px){.page{padding:14px}.grid{grid-template-columns:1fr}.wide{grid-column:auto}.top h1{font-size:19px}table{font-size:11px}th,td{padding:6px}}@media print{html,body{background:#fff}.page{width:100%;padding:0}.no-print{display:none!important}.top{border-bottom:1px solid #111}.close{display:none}}
-    </style></head><body><main class="page">
-      <div class="top"><div><h1>تفاصيل الطلب / للطباعة</h1><div class="muted">StoreMaster</div></div><button class="close no-print" type="button" onclick="window.close()" aria-label="خروج">×</button></div>
-      <h2>جميع بيانات الطلب</h2><div class="grid">${infoRows}</div>
-      <h2>المنتجات</h2><table><thead><tr><th>المنتج</th><th>المقاس</th><th>اللون</th><th>الكمية</th><th>المبلغ</th></tr></thead><tbody>${itemRows||'<tr><td colspan="5">لا توجد تفاصيل</td></tr>'}</tbody></table>
-      <div class="total">الإجمالي: ${formatMoney(o.total)}</div>
-      <div class="print-actions no-print"><button class="print-btn" type="button" onclick="window.print()"><i>🖨</i> طباعة</button><button class="print-btn" type="button" onclick="window.close()">× خروج</button></div>
-      <div class="print-note">تم إنشاء هذه الصفحة من لوحة StoreMaster</div>
-    </main></body></html>`);
-    w.document.close();w.focus();setTimeout(()=>w.print(),250);
-  };
 
   window.openOrderDetails=function(orderId){
     const id=String(orderId);
@@ -9186,6 +9164,22 @@ function clickExplanation(el){
 
  if(id==='facebookPixelEnabled'||id==='facebookPixelId'||id==='tiktokPixelEnabled'||id==='tiktokPixelId'||/^facebook_event_|^tiktok_event_/.test(id)) return fieldExplanation(el);
  if(id==='syncFullBtn'||exact(/مزامنة كلية مع السرفر|المنتجات، الترتيب، الإعدادات/)) return {title:'المزامنة الكلية مع السرفر',text:'هذه العملية تجمع أهم تغييرات المتجر ثم ترسلها إلى السرفر في عملية واحدة وفق منطق المزامنة الكلية.',detail:'تشمل المنتجات، ترتيب المنتجات والإعدادات.\nترتيب المنتجات: تُقرأ أرقام الترتيب وتُحدّث PRODUCT_ORDER قبل الرفع.\nالهدف: جعل الوجهة المرتبطة بالسرفر متوافقة مع آخر إعدادات المتجر بدل إرسال جزء واحد فقط من التغييرات.'};
+ if(tab==='checkout-analytics') {
+   if(id==='caDateFrom'||id==='caDateTo') return {title:'تصفية تحليل Checkout بالتاريخ',text:'يحدد هذا الحقل الفترة الزمنية التي سيُبنى عليها تحليل Checkout والبيانات المالية المرتبطة بالطلبات.',detail:'تُرسل الفترة المختارة إلى مصدر تحليل Checkout وإلى جلب الطلبات المستخدمة في المؤشرات المالية. تغيير التاريخ لا يغيّر الطلبات نفسها؛ بل يغيّر نطاق التحليل المعروض.'};
+   if(id==='caViewMode') return {title:'طريقة عرض تحليل Checkout',text:'يغيّر طريقة عرض لوحات تحليل Checkout دون تغيير البيانات الأصلية.',detail:'استخدم العرض المناسب لقراءة مسار العميل أو المؤشرات المالية أو بقية أقسام التحليل. التغيير تحليلي/بصري ولا يعدّل الطلبات.'};
+   if(exact(/تحديث التحليل|تحديث/)) return {title:'تحديث تحليل Checkout',text:'يعيد جلب بيانات Checkout والطلبات ثم يعيد بناء المؤشرات والجداول التحليلية.',detail:'النظام يقرأ مصدر تحليل Checkout ومصدر الطلبات، ثم يربطهما في الصفحة لإظهار المؤشرات المالية وحالات الطلبات ومسار العميل. إذا تعذر مصدر، يظهر التنبيه الذي يوضح الجزء الذي فشل تحميله.'};
+   if(exact(/checkout غير المكتمل|غير مكتمل/)) return {title:'Checkout غير المكتمل',text:'يعرض الجلسات التي بدأت رحلة الإتمام ولم تصل إلى إتمام الطلب، مع آخر إجراء معروف والولاية وطريقة التوصيل وقيمة السلة.',detail:'الغرض هو معرفة أين تتوقف رحلة العميل بدل النظر إلى الطلبات النهائية فقط. هذه بيانات تحليلية ولا تعني أن كل جلسة غير مكتملة تمثل طلبًا مؤكدًا أو ضائعًا نهائيًا.'};
+   if(exact(/مسار العميل في checkout|من السلة إلى إتمام الشراء|مسار العميل/)) return {title:'مسار العميل في Checkout',text:'هذا الجزء يشرح تسلسل رحلة العميل من بداية الإتمام إلى الشراء، ويحوّل الأحداث التقنية إلى مراحل مفهومة.',detail:'المراحل: السلة ← الولاية ← التوصيل ← بيانات العميل ← تأكيد الطلب ← إتمام الشراء. إذا توقفت الرحلة قبل النهاية يمكن أن تظهر كـ Checkout غير مكتمل. الهدف هو فهم موضع التوقف وربطه بالطلبات المسجلة.'};
+ }
+ if(id==='orderDetailStatus') return {title:'حالة الطلب',text:'هذا الحقل يحدد الحالة الإدارية الحالية للطلب، مثل الانتظار أو التأكيد أو التوصيل أو التسليم أو الإرجاع.',detail:'الحالة جزء من دورة إدارة الطلب بعد وصوله من Checkout. تغييرها هنا يحدّث حالة الطلب ولا يغيّر بيانات العميل أو المنتجات.'};
+ if(exact(/تفاصيل الطلب|فتح التفاصيل|عرض التفاصيل|open.?order.?details/)) return {title:'تفاصيل الطلب',text:'يفتح هذا الإجراء العرض الكامل للطلب الذي وصل من Checkout حتى تتم مراجعة بياناته قبل اتخاذ الإجراء الإداري.',detail:'تسلسل القراءة: بيانات الطلب الأساسية ← بيانات العميل والتوصيل ← المنتجات وتفاصيلها ← المبالغ ← الحالة والإجراءات. بعد المراجعة يمكن حفظ الحالة أو الخروج، وتوجد إجراءات العرض/الإخفاء وفق منطق الشاشة.'};
+ if(tab==='orders') {
+   if(exact(/تحديث/)) return {title:'تحديث الطلبات',text:'يعيد تحميل قائمة الطلبات من مصدر الإدارة ويحدّث الإحصاءات والصفوف الظاهرة وفق الفلاتر الحالية.',detail:'استخدمه بعد وصول طلب جديد أو عندما تريد التأكد من أن القائمة الحالية محدثة. لا يغيّر بيانات الطلبات بحد ذاته.'};
+   if(exact(/بحث بالاسم|الهاتف أو رقم الطلب|بحث/)) return {title:'البحث في الطلبات',text:'يتيح العثور على الطلب باستخدام اسم العميل أو رقم الهاتف أو رقم الطلب.',detail:'الغرض هو الوصول السريع إلى الطلب. بعد العثور عليه، افتح تفاصيل الطلب لقراءة البيانات الكاملة.'};
+   if(exact(/الطلبات الظاهرة|الطلبات المخفية|الكل/)) return {title:'رؤية الطلبات',text:'يحدد هذا الفلتر هل تعرض الشاشة الطلبات الظاهرة أو المخفية أو الاثنين معًا.',detail:'الإخفاء خاص بشاشة الإدارة وفق منطق النظام ولا يعني حذف الطلب من المصدر. استخدم «المخفية» للعثور على طلب أخفي سابقًا، و«الكل» لعرض الحالتين.'};
+   if(exact(/كل طرق التوصيل|للمنزل|للمكتب/)) return {title:'فلتر طريقة التوصيل',text:'يصفي الطلبات حسب طريقة التوصيل التي اختارها العميل في Checkout: المنزل أو المكتب.',detail:'اختيار العميل لطريقة التوصيل في Checkout ينتقل إلى بيانات الطلب ويصبح متاحًا للفلترة هنا.'};
+ }
+
  if(exact(/توصيل مجاني|مجاني|free delivery/)) return common.delivery;
  if(exact(/إضافة منتج|منتج جديد|add.?product/)) return common.product;
  if(exact(/حفظ|save/)) return common.save;
@@ -9238,8 +9232,16 @@ function pageDetail(t){
   delivery:`توجد تبويبات داخلية لأسعار الولايات، التوصيل المجاني، والمنتجات المؤهلة.\nالاختيار بين هذه التبويبات يغيّر الجزء المعروض من إعدادات التوصيل فقط.`,
   settings:`توجد تبويبات داخلية لهوية المتجر، التواصل، التصميم، المقاسات والألوان، الإعدادات المتقدمة وأكواد التتبع.\nكل تبويب يعرض مجموعة مختلفة من إعدادات المتجر، لذلك يجب قراءة عنوان التبويب النشط قبل تعديل الحقول.`,
   tools:`أدوات النظام مخصصة للعمليات المتقدمة.\nالمزامنة الكلية تحفظ أرقام ترتيب المنتجات ضمن PRODUCT_ORDER ثم ترفع الإعدادات والمنتجات إلى السرفر.\nالتنظيف عملية صيانة منفصلة عن ترتيب المنتجات والمزامنة.`,
-  orders:`هذه الصفحة مخصصة لمراجعة الطلبات الحالية. أدوات التحديث والفلترة تعمل على عرض الطلبات ومعلوماتها الإدارية.`,
-  archive:`هذه الصفحة مخصصة للطلبات المؤرشفة، مع إمكان مراجعتها وتصفيتها واستخراج بياناتها وفق الأدوات الموجودة.`,
+  'checkout-analytics':`تحليل Checkout يجمع بيانات رحلة الإتمام مع بيانات الطلبات الظاهرة لقراءة ما يحدث بين بداية Checkout والطلب المسجل.
+مسار الرحلة: السلة ← الولاية ← التوصيل ← بيانات العميل ← تأكيد الطلب ← إتمام الشراء، مع إمكانية ظهور «غير مكتمل» عندما لا تكتمل الرحلة.
+المؤشرات: جلسات Checkout، إجمالي المبيعات، قيمة Checkout المتروك، الخصومات، عدد القطع، ومؤشرات الحالات.
+التحليل التفصيلي: الأداء حسب الولاية، حسب طريقة التوصيل، أهم المنتجات، وCheckout غير المكتمل، إضافة إلى مؤشرات رأس المال والقيم حسب حالة الطلب.
+مهم: هذه الصفحة للتحليل وقراءة العلاقة بين Checkout والطلبات؛ لا تعدّل الطلب نفسه من هنا.`,
+  orders:`هذه الصفحة هي المرحلة الإدارية التالية بعد Checkout: الطلب الذي أرسله العميل يظهر هنا ليتم البحث عنه ومراجعته وإدارته.
+الإحصاءات تعرض أعداد الطلبات حسب حالتها، والفلترة تسمح بالبحث بالاسم أو الهاتف أو رقم الطلب، والحالة، والطلبات الظاهرة/المخفية، وطريقة التوصيل، والتاريخ.
+عند فتح طلب: ينتقل المساعد إلى «تفاصيل الطلب» ويشرح بيانات العميل والتوصيل والمبالغ والمنتجات ثم إدارة الحالة.
+الطلبات المخفية لا تُحذف من Google Sheet؛ الإخفاء خاص بشاشة الإدارة وفق منطق النظام الموجود في الملف.`,
+  archive:`هذه الصفحة مخصصة للطلبات المؤرشفة، مع إمكان مراجعتها وتصفيتها واستخراج بياناتها وفق الأدوات الموجودة. الأرشيف ليس بديلًا عن شاشة الطلبات الحالية؛ هو مساحة منفصلة للطلبات القديمة.`,
   about:`هذه الصفحة تعرّف بفريق StoreMaster وطبيعة الحلول الرقمية التي يطورها.`
  };
  return details[t]||`سياق الصفحة: ${tabName(t)}.\nالشرح هنا يوضح وظيفة عناصر هذه الصفحة وسياقها مباشرة.`;
